@@ -37,23 +37,34 @@ body{
     gap: 2rem;
     margin-top: 0.7rem;
 }
-#nav-btn1{
-    width: 5rem;
-    background-color: white;
-    border-radius: 0.4rem;
-    border: solid 1px #080FC9;
-}
+
 #nav-btn2{
     width: 7rem;
     background-color: #080FC9;
     border-radius: 0.4rem;
     border: solid 1px #080FC9;
 }
-#nav-text1{
+#nav-btn2:hover{
+    width: 7rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    border: solid 1px #080FC9;
     color: #080FC9;
 }
+#nav-text1{
+    color: #080FC9;
+    margin-top: 0.6rem;
+    font-weight: 500;
+}
+#nav-text1:hover{
+    color: black;
+}
+
 #nav-text2{
     color: white;
+}
+#nav-text2:hover{
+    color: #080FC9;
 }
 #sidebar{
     background-color: #060CA1;
@@ -79,8 +90,11 @@ body{
 }
 
 #home a{
-    color: #080FC9;
+    color: black;
     font-size: medium;
+}
+#home a:hover{
+    color: #080FC9;
 }
 .container{
     display: flex;
