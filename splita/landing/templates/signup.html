@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="col-2">
-        <img id="logo" src="images\splita_logo.svg" alt="splita_logo">
+        <img id="logo" src="{% static 'images\splita_logo.svg' %}" alt="splita_logo">
         </div>
 
         <div class="col-6 center_txt top-nav-box">
@@ -34,7 +34,7 @@
     <main>
         <section class="row" id="signup_pg_main">
             <div class="col-7">
-                <img  class="center_item" id="signup_img" src="images\signup_img.svg" alt="signup_img">
+                <img  class="center_item" id="signup_img" src="{% static 'images\signup_img.svg' %}" alt="signup_img">
             </div>
         <!-- Sign Up Form-->
             <div class="col-5 side-pad">
@@ -53,8 +53,8 @@
                 <div class="below_form">
                     <h4 id="or-styl"><span>OR</span><h4>
                     <h4 class="center_txt">Sign up with</h4>
-                    <a href=""><button type="button" class="btn"><img src="images\google_logo.svg" alt="google_logo"> Google</button></a>
-                    <a href=""><button type="button" class="btn"><img src="images\github_logo.svg" alt="github_logo"> Github</button></a>
+                    <a href=""><button type="button" class="btn"><img src="{% static 'images\google_logo.svg' %}" alt="google_logo"> Google</button></a>
+                    <a href=""><button type="button" class="btn"><img src="{% static 'images\github_logo.svg' %}" alt="github_logo"> Github</button></a>
 
                     <span class="small-txt">Already have an account? <a href="login.html">Log in</a></span>
 
@@ -67,15 +67,13 @@
     <footer>
         <div class="row side-pad1">
             <div class="col-12 row">
-                <img class="r_float fin-sect" src="images\linkedin_logo.svg" alt="linkedin_logo">
-                <img class="r_float fin-sect" src="images\twitter_logo.svg" alt="twitter_logo">
-                <img class="r_float fin-sect"
-                src="images\instagram_logo.svg" alt="instagram_logo">
-
+                <img class="r_float fin-sect" src="{% static 'images\linkedin_logo.svg' %}" alt="linkedin_logo">
+                <img class="r_float fin-sect" src="{% static 'images\twitter_logo.svg' %}" alt="twitter_logo">
+                <img class="r_float fin-sect" src="{% static 'images\instagram_logo.svg' %}" alt="instagram_logo">
             </div>
 
             <div class="col-12">
-                <img src="images\splita_logof.svg" alt="signup_img">
+                <img src="{% static 'images\splita_logof.svg' %}" alt="signup_img">
             </div>
 
             <div class="col-12">
