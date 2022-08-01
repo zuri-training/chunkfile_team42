@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="{% static 'css\user-styl.css' %}" rel="stylesheet">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <header>
+        <div class="col-2">
+        <img id="logo" src="images\splita_logo.svg" alt="splita_logo">
+        </div>
+
+        <div class="col-6 center_txt top-nav-box">
+        <a class="top-nav" href="">Home</a>
+        <a class="top-nav" href="">About</a>
+        <a class="top-nav" href="">Contact Us</a>
+        </div>
+
+        <div class="col-4 center_txt top-nav-box">
+        <a class="fin-sect" id="blue-txt" href="login.html">Log In</a>
+        <a href="signup.html"><button type="button" class="nav-btn" id="signup-btn">SIGN UP</button></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="row" id="signup_pg_main">
+            <div class="col-7">
+                <img  class="center_item" id="signup_img" src="images\signup_img.svg" alt="signup_img">
+            </div>
+        <!-- Sign Up Form-->
+            <div class="col-5 side-pad">
+                <h1 class="center_txt">Sign Up</h1>
+                <div>
+                    <span><b>Hello there</b></span><br>
+                    <span class="small-txt"><b>Create an account to get started</b></span>
+                </div>
+
+                <form action="">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full name"><br/>
+                    <input type="email" name="email" id="email" placeholder="Email address"><br/>
+                    <input type="password" name="password" id="password" placeholder="Password"><br/>
+                    <input type="submit" value="Sign up">
+                </form>
+                <div class="below_form">
+                    <h4 id="or-styl"><span>OR</span><h4>
+                    <h4 class="center_txt">Sign up with</h4>
+                    <a href=""><button type="button" class="btn"><img src="images\google_logo.svg" alt="google_logo"> Google</button></a>
+                    <a href=""><button type="button" class="btn"><img src="images\github_logo.svg" alt="github_logo"> Github</button></a>
+
+                    <span class="small-txt">Already have an account? <a href="login.html">Log in</a></span>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="row side-pad1">
+            <div class="col-12 row">
+                <img class="r_float fin-sect" src="images\linkedin_logo.svg" alt="linkedin_logo">
+                <img class="r_float fin-sect" src="images\twitter_logo.svg" alt="twitter_logo">
+                <img class="r_float fin-sect"
+                src="images\instagram_logo.svg" alt="instagram_logo">
+
+            </div>
+
+            <div class="col-12">
+                <img src="images\splita_logof.svg" alt="signup_img">
+            </div>
+
+            <div class="col-12">
+                <form class="nosubmit col-5">
+                    <input class="nosubmit" type="search" placeholder="Search">
+                </form>
+            </div>
+
+            <div class="small-txt">
+            <ul class="col-3">
+                <li><a href="">Products</a></li>
+                <li><a href="">Enrichments</a></li>
+                <li><a href="">Use cases</a></li>
+            </ul>
+            <ul class="col-3">
+                <li><a href="">FAQs</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+            <ul class="col-3">
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">How to</a></li>
+                <li><a href="">Storage</a></li>
+            </ul>
+            <ul class="col-3">
+                <li><a href="">Blog</a></li>
+                <li><a href="">Data Community</a></li>
+                <li><a href="">Video demos</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+            </div>
+            <p class="col-12 small-txt">
+                <span>Address</span><br/>
+                <span>Lagos, Nigeria</span><br/>
+                <span>Phone: +234 903 426 3462</span><br/>
+                <span>Email: info@splita.com</span>
+            </p>
+        </div>
+        <div class="col-12 footer-2 small-txt">
+            <span class="col-9" id="last-span">
+                <a class="fin-sect" href="">Privacy</a>
+                <a class="fin-sect" href="">Security</a>
+                <a class="fin-sect" href="">Terms of use</a>
+            </span>
+            <span class="col-3 center_txt">2022 Splita, INC</span>
+        </div>
+    </footer>
+
+</body>
+</html>

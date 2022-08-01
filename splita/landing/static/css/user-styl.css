@@ -1,0 +1,213 @@
+/* General style */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    font-family: Manrope;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.r_float {
+    float: right;
+    padding-right: 20px;
+}
+
+.small-txt {
+    font-size: small;
+}
+
+.center_item {
+    margin: 0 auto;
+    display: block;
+}
+
+.side-pad {
+    padding: 0 100px;
+}
+
+.side-pad1 {
+    padding: 10px 50px;
+}
+
+.fin-sect {
+    padding-right: 30px;
+}
+
+#last-span {
+    padding-left: 50px;
+}
+
+/* Style for header */
+
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    padding: 0 50px;
+}
+
+#blue-txt {
+    color: #080FC9;
+    font-size: 16px;
+}
+
+.top-nav {
+    color: #808080;
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+.top-nav-box {
+    padding: 24px 0;
+}
+
+.nav-btn {
+    padding: 8px 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 0 7px;
+}
+
+/* Style for main */
+
+main {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+#signup_pg_main {
+    padding: 120px 0;
+}
+
+#signup_img {
+    padding-top: 100px;
+}
+
+#login_img {
+    padding-top: 130px;
+}
+
+.center_txt {
+    text-align: center;
+}
+
+#r-txt {
+    text-align: right;
+}
+
+.no-pad {
+    padding: 0;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=submit], .btn {
+    width: 100%;
+    margin: 7px 0;
+    padding: 14px 12px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+input[type=submit], #signup-btn {
+    background-color: #080FC9;
+    color: #FFFFFF;
+}
+
+#or-styl {
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #000;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+#or-styl span {
+    background:#fff;
+    padding:0 10px;
+}
+
+.below_form {
+    margin-top: 25px;
+}
+
+/* For footer */
+
+footer {
+    background-color: #030650;
+    color: #FFFFFF;
+    width: 100%;
+    margin: 0;
+}
+
+footer ul {
+    display: inline;
+}
+
+footer ul li {
+    padding: 10px 0;
+}
+
+footer a {
+    color: #FFFFFF;
+}
+
+form.nosubmit {
+  border: none;
+  padding: 0;
+}
+
+input.nosubmit {
+  border: 1px solid #555;
+  display: block;
+  padding: 9px 4px 9px 40px;
+  background: #FFFFFF url("images\search_icon.svg") no-repeat 15px center;
+}
+
+.footer-2 {
+    background-color: #060CA1;
+    color: #FFFFFF;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
