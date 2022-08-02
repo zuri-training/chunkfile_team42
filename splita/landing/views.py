@@ -4,6 +4,9 @@ from django.template import loader
 
 # Create your views here.
 
+def index(request):
+    return HttpResponse("E work")
+
 def landing(request):
     template = loader.get_template('landing.html')
     return HttpResponse(template.render())

@@ -1,6 +1,5 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,25 +9,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{% static './css/style.css' %}">
-<script defer src="{% static './javascript/main.js' %}"></script>
+<link rel="stylesheet" href="{% static 'landing//css/style.css' %}">
+<script defer src="{% static 'landing/javascript/main.js' %}"></script>
     <title>Login Page</title>
 </head>
 <body>
     <nav class="navbar">
-        <div id="menu"><img src="{% static 'images/menu.png' %}"alt=""></div>
-<div class="logo"><img src="{% static 'images/logo.svg' %}"alt="">
+        <div id="menu"><img src="{% static 'landing/images/menu.png' %}"alt=""></div>
+<div class="logo"><img src="{% static 'landing/images/logo.svg' %}"alt="">
 </div>
 <div id="home">
     <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">Contact Us</a>
 </div>
-<div class="nav-btn"><a href="#" ><p id="nav-text1">Login</p></a>
-    <button id="nav-btn2"><a href="#"><p id="nav-text2">SIGN UP</p></a></button></div>
+<div class="nav-btn"><a href="login.html" ><p id="nav-text1">Login</p></a>
+    <button id="nav-btn2"><a href="signup.html"><p id="nav-text2">SIGN UP</p></a></button></div>
     </nav>
     <div id="sidebar">
-        <button id="close"><img src="{% static 'images/close2.png' %}" alt="close" style="width: 1rem; height:1rem;"></button>
+        <button id="close"><img src="{% static 'landing/images/close2.png' %}" alt="close" style="width: 1rem; height:1rem;"></button>
         <ul>
             <li>
     <a href="#">Home</a>
@@ -37,18 +36,18 @@
     <a href="#">About</a>
             </li>
             <li>
-    <a href="#">Contact Us</a>  
+    <a href="#">Contact Us</a>
             </li>
             <li>
-                <a href="#">Sign Up</a>  
+                <a href="#">Sign Up</a>
                         </li>
                         <li>
-                            <a href="#">Login</a>  
+                            <a href="#">Login</a>
                                     </li>
         </ul>
     </div>
     <div class="container">
-        <div class="picture"><img src="{% static 'images/persons.svg' %}" alt="" id="img"></div>
+        <div class="picture"><img src="{% static 'landing/images/persons.svg' %}" alt="" id="img"></div>
         <div class="form">
             <h2 id="login-title">Log In</h2>
             <h3>Welcome</h3>
@@ -63,7 +62,6 @@
                 <tr>
                     <td>
                         <input type="password" placeholder="Password" class="inp" required>
-    
                     </td>
                 </tr>
                </table>
@@ -84,8 +82,8 @@
             </div>
             <p id="login2">Login With</p>
            <div class="btns">
-            <button class="site"><div class="logos"><img src="{% static 'images/flat-color-icons_google.svg' %}" alt="" style="width: 25px; height:25px; background-color:white"><a href="#"><p id="google">Google</p></a></div></button>
-            <button class="site"><div class="logos"><img src="{% static 'images/github.svg' %}" alt="" style="width: 30px; height:30px; background-color:white"><a href="#"><p id="github">Github</p></a></div></button>
+            <button class="site"><div class="logos"><img src="{% static 'landing/images/flat-color-icons_google.svg' %}" alt="" style="width: 25px; height:25px; background-color:white"><a href="#"><p id="google">Google</p></a></div></button>
+            <button class="site"><div class="logos"><img src="{% static 'landing/images/github.svg' %}" alt="" style="width: 30px; height:30px; background-color:white"><a href="#"><p id="github">Github</p></a></div></button>
            </div>
 
             <p>Don't have an account?  <a href="#" id="signup"> Sign up</a></p>
@@ -93,16 +91,16 @@
     </div>
     <div class="footer">
         <div class="footer-logo">
-            <img src="{% static 'images/logo2.svg' %}" alt="">
+            <img src="{% static 'landing/images/logo2.svg' %}" alt="">
             <div class="home">
-                <a href="#"><img src="{% static 'images/Frame 137.svg' %}" alt=""></a>
-                <a href="#"><img src="{% static 'images/Frame 138.svg' %}" alt=""></a>
-                <a href="#"><img src="{% static 'images/Frame 139.svg' %}" alt=""></a>
+                <a href="#"><img src="{% static 'landing/images/Frame 137.svg' %}" alt=""></a>
+                <a href="#"><img src="{% static 'landing/images/Frame 138.svg' %}" alt=""></a>
+                <a href="#"><img src="{% static 'landing/images/Frame 139.svg' %}" alt=""></a>
             </div>
         </div>
         <div class="con">
             <input type="text" />
-            <img src="{% static 'images/Vector.svg' %}" />
+            <img src="{% static 'landing/images/Vector.svg' %}" />
         </div>
         <div class="list">
             <ul>
