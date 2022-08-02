@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="{% static 'css\user-styl.css' %}" rel="stylesheet">
-    <title>Sign Up</title>
+    <link href="{% static 'landing\css\user-styl.css' %}" rel="stylesheet">
+    <title>Document</title>
 </head>
-
 <body>
     <header>
         <div class="col-2">
-        <img id="logo" src="{% static 'images\splita_logo.svg' %}" alt="splita_logo">
+        <img id="logo" src="{% static 'landing\images\splita_logo.svg' %}" alt="splita_logo">
         </div>
 
         <div class="col-6 center_txt top-nav-box">
@@ -30,53 +27,22 @@
         <a href="signup.html"><button type="button" class="nav-btn" id="signup-btn">SIGN UP</button></a>
         </div>
     </header>
-
     <main>
-        <section class="row" id="signup_pg_main">
-            <div class="col-7">
-                <img  class="center_item" id="signup_img" src="{% static 'images\signup_img.svg' %}" alt="signup_img">
-            </div>
-        <!-- Sign Up Form-->
-            <div class="col-5 side-pad">
-                <h1 class="center_txt">Sign Up</h1>
-                <div>
-                    <span><b>Hello there</b></span><br>
-                    <span class="small-txt"><b>Create an account to get started</b></span>
-                </div>
 
-                <form action="">
-                    <input type="text" name="fullname" id="fullname" placeholder="Full name"><br/>
-                    <input type="email" name="email" id="email" placeholder="Email address"><br/>
-                    <input type="password" name="password" id="password" placeholder="Password"><br/>
-                    <input type="submit" value="Sign up">
-                </form>
-                <div class="below_form">
-                    <h4 id="or-styl"><span>OR</span><h4>
-                    <h4 class="center_txt">Sign up with</h4>
 
-                    <a href=""><button type="button" class="btn btn2"><img src="{% static 'images\google_logo.svg' %}" alt="google_logo"> Google</button></a>
-                    <a href=""><button type="button" class="btn btn2"><img src="{% static 'images\github_logo.svg' %}" alt="github_logo"> Github</button></a>
-                    <a href=""><button type="button" class="btn"><img src="{% static 'images\google_logo.svg' %}" alt="google_logo"> Google</button></a>
-                    <a href=""><button type="button" class="btn"><img src="{% static 'images\github_logo.svg' %}" alt="github_logo"> Github</button></a>
 
-                    <span class="small-txt">Already have an account? <a href="login.html">Log in</a></span>
-
-                </div>
-
-            </div>
-        </section>
     </main>
 
-    <footer>
+   <footer>
         <div class="row side-pad1">
             <div class="col-12 row">
-                <img class="r_float fin-sect" src="{% static 'images\linkedin_logo.svg' %}" alt="linkedin_logo">
-                <img class="r_float fin-sect" src="{% static 'images\twitter_logo.svg' %}" alt="twitter_logo">
-                <img class="r_float fin-sect" src="{% static 'images\instagram_logo.svg' %}" alt="instagram_logo">
+                <img class="r_float fin-sect" src="{% static 'landing\images\linkedin_logo.svg' %}" alt="linkedin_logo">
+                <img class="r_float fin-sect" src="{% static 'landing\images\twitter_logo.svg' %}" alt="twitter_logo">
+                <img class="r_float fin-sect" src="{% static 'landing\images\instagram_logo.svg' %}" alt="instagram_logo">
             </div>
 
             <div class="col-12">
-                <img src="{% static 'images\splita_logof.svg' %}" alt="signup_img">
+                <img src="{% static 'landing\images\splita_logof.svg' %}" alt="signup_img">
             </div>
 
             <div class="col-12">
@@ -124,6 +90,5 @@
             <span class="col-3 center_txt">2022 Splita, INC</span>
         </div>
     </footer>
-
 </body>
 </html>
