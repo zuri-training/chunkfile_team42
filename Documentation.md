@@ -1,16 +1,15 @@
 # Documentation
 
-Welcome to Splita doc., although we are working to creating a really simple and user-friendly platform, here is a short guide to help you through the editing process
+Welcome to Splita doc,we are working to create a simple and user friendly platform that splits csv and json files. Below is a short guide to help you through the splitting process
 
 # Our Solution
 
-Splita has been created to help solve the problem of handling large files which includes memory challenges and longer loading time. In the immediate, our platform is targeted for splitting large CSV and JSON file formats, with a view to adding more file formats and data manipulation features in the nearest future.
-Our solution includes chunking large CSV and JSON files within minutes into smaller units of the same format. We are also providing the ability to download the chunked files immediately or save to the cloud it for future download. You don’t need to have the file you want to process stored on your device. If you have a Google Drive or Dropbox account, you can download them straight to our page.
+Are you running out of storage because your file sizes are too large?Are large files slowing your system  down? Are you looking for a way to solve these problems?Solution,Splita. Splita is a free web platform that lets you split large csv and json files into small sizes we call chunks. The Chunk sizes can be manually selected so that users can set their own chunk size .You can upload files from your local machine or your cloud service provider straight to Splita to start the process.After splitting your files you have a choice to immediately download your chunks or save them to a cloud service provider of your choice (Google Drive,Dropbox or one drive).
 
-Splita is powered by Django framework, HTML, CSS, Javascript and MYSQL
+Splita is powered by Django framework, HTML, CSS, Javascript and MYSQL. 
 
-To fully enjoy the rich service of this platform users need to authenticated via the Sign Up page or Login page from where they are transferred to the dashboard to do the chunking of the files. Unauthenticated users however cn only from the landing page view the documentation of our service.
+Splita is a free web platform,however  to be able to perform all the above ,the platform will require you to Sign up or log in first. Authenticated users will be redirected to a dashboard that lets you split your files as you wish. Unauthenticated users can however go through our landing page and documentation to better understand  the service. 
 
 # Technical Issues
 
-Splita has been designed to be user-friendly and we have tried to tackle any technical issue. However, if you ever face any problem, do not hesitate to reach out. We will do our very best to come up with a solution.
+Splita has been designed to be user -friendly and we have tried to tackle any technical issues. However, in the event where you face an unfortunate technical issue,contact support and our technical support team will contact you and we will be able to come up with a solution as fast as possible. 
