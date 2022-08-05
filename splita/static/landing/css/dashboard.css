@@ -744,7 +744,7 @@ aside{
 
     .search_btn {
         margin: 20px 0 20px 5rem;
-        width: 75%;
+        width: 75.5%;
     }
 
     .search_text {
@@ -760,7 +760,7 @@ aside{
 
     .bars{
         font-size: 25px;
-        margin: 10px 25px 10px 25px;
+        margin: 15px 22px 15px 23px;
         cursor: pointer;
         display: block;
         width: 30%;
@@ -912,9 +912,17 @@ aside{
     }
 
     .chunk_btn {
-        padding: 20px 10rem;
+        padding: 20px 9.85rem;
         font-size: 16px;
         margin: 0 auto;
+    }
+
+    .chunk_btn:hover{
+        font-size: 18px;
+    }
+
+    .chunk_btn:active{
+        font-size: 18px;
     }
 }
 
@@ -923,6 +931,15 @@ aside{
     /* .main_content {
         margin: 0 25px 4rem 25px;
     } */
+
+    .bars {
+        margin: 15px 20px 15px 20px;
+        width: 30%;
+    }
+
+    .search_btn {
+        width: 73%;
+    }
 
     .main_content {
         margin: 0 23px 4rem 23px;
@@ -964,6 +981,10 @@ aside{
         
     }
 
+    .search_btn {
+        width: 72.5%;
+    }
+
     .chunk_btn {
         padding: 20px 8.1rem;
     }
@@ -977,6 +998,11 @@ aside{
 
     .top{
         padding-right: 20px;
+    }
+
+    .search_btn {
+        width: 75%;
+        margin: 20px -3px 20px 5rem;
     }
 
     .user_mobile {
