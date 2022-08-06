@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="{% static 'landing\css\user-styl.css' %}" rel="stylesheet">
-    <title>Document</title>
+    <title>{% block title %}base{% endblock %}</title>
 </head>
 <body>
     <header>
@@ -23,13 +25,15 @@
         </div>
 
         <div class="col-4 center_txt top-nav-box">
-        <a class="fin-sect" id="blue-txt" href="login.html">Log In</a>
-        <a href="signup.html"><button type="button" class="nav-btn" id="signup-btn">SIGN UP</button></a>
+        <a class="fin-sect" id="blue-txt" href="/login">Log In</a>
+        <a href="/signup"><button type="button" class="nav-btn" id="signup-btn">SIGN UP</button></a>
         </div>
     </header>
     <main>
 
+      {% block content %}
 
+      {% endblock %}
 
     </main>
 
