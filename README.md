@@ -1,13 +1,13 @@
 # chunkfile_team42
-Team42 is engaged in building a platorm that manipulates files with emphasis on chunking large csv and json files
+Team42 is engaged in building a platform that manipulates files with emphasis on chunking large csv and json files.
 
 # Welcome
 
-Welcome to Splita doc,we are working to create a simple and user friendly platform that splits csv and json files. Below is a short guide to help you through the splitting process
+Welcome to Splita doc, we are working to create a simple and user friendly platform that splits csv and json files. Below is a short guide to help you through the splitting process.
 
 # Our Solution
 
-Are you running out of storage because your file sizes are too large?Are large files slowing your system  down? Are you looking for a way to solve these problems?Solution,Splita. Splita is a free web platform that lets you split large csv and json files into small sizes we call chunks. The Chunk sizes can be manually selected so that users can set their own chunk size .You can upload files from your local machine or your cloud service provider straight to Splita to start the process.After splitting your files you have a choice to immediately download your chunks or save them to a cloud service provider of your choice (Google Drive,Dropbox or one drive).
+Are you running out of storage because your file sizes are too large? Are large files slowing your system  down? Are you looking for a way to solve these problems?Solution; Splita. Splita is a free web platform that lets you split large csv and json files into small sizes we call chunks. The Chunk sizes can be manually selected so that users can set their own chunk size .You can upload files from your local machine or your cloud service provider straight to Splita to start the process.After splitting your files you have a choice to immediately download your chunks or save them to a cloud service provider of your choice (Google Drive,Dropbox or one drive).
 
 Splita is powered by Django framework, HTML, CSS, Javascript and MYSQL. 
 
