@@ -11,7 +11,7 @@ Are you running out of storage because your file sizes are too large?Are large f
 
 Splita is powered by Django framework, HTML, CSS, Javascript and MYSQL. 
 
-Splita is a free web platform,however  to be able to perform all the above ,the platform will require you to Sign up or log in first. Authenticated users will be redirected to a dashboard that lets you split your files as you wish. Unauthenticated users can however go through our landing page and documentation to better understand  the service. 
+Splita is a free web platform, however  to be able to perform all the above ,the platform will require you to Sign up or log in first. Authenticated users will be redirected to a dashboard that lets you split your files as you wish. Unauthenticated users can however go through our landing page and documentation to better understand  the service. 
 
 # Technical Issues
 
