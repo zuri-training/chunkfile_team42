@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'splita_icon-icon';
+  src:  url('fonts/splita_icon.eot?5s9m5m');
+  src:  url('fonts/splita_icon.eot?5s9m5m#iefix') format('embedded-opentype'),
+    url('fonts/splita_icon.ttf?5s9m5m') format('truetype'),
+    url('fonts/splita_icon.woff?5s9m5m') format('woff'),
+    url('fonts/splita_icon.svg?5s9m5m#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+  .splita_icon{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'splita_icon-icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logout:before {
+  content: "\e906";
+}
+.icon-dashboard:before {
+  content: "\e900";
+}
+.icon-dashboard_border:before {
+  content: "\e901";
+}
+.icon-file_icon:before {
+  content: "\e902";
+}
+.icon-storage_icon:before {
+  content: "\e903";
+}
+.icon-recycle_icon:before {
+  content: "\e904";
+}
+.icon-settings_icon:before {
+  content: "\e905";
+}
