@@ -41,3 +41,15 @@ def login_view(request):
     else:
         return render(request, 'landing/login.html')
 
+
+def dashboard(request):
+    return render(request, 'landing/dashboard.html')
+    
+def contact(request):
+    return render(request, 'landing/contact.html')
+
+def reset(request):
+    return render(request, 'landing/reset.html')
+
+def support(request):
+    return render(request, 'landing/support.html')

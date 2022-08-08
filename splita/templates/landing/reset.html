@@ -1,0 +1,39 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+{% block title %}login{% endblock %}
+{% block content %}
+<head>
+<link rel="stylesheet" href="{% static 'landing/css/reset.css' %}">
+</head>
+
+<div class="container">
+    <div class="picture"><img src="{% static 'landing/images/forgot-password.svg' %}" alt="login" id="img"></div>
+    <div class="form">
+        <h2 id="login-title">Forgot Password?</h2>
+        
+        <p id="logins" style="text-align: center;">Enter your email and we'll send you a link to reset your password</p>
+        <form action="post">
+            {% csrf_token %}
+           <table>
+            <tr>
+                <td>
+                    <input type="email" placeholder=" Enter Email Address" class="inp" required>
+
+                </td>
+            </tr>
+            
+           </table>
+            
+
+           <div id="btnn">
+            <button id="contact-btn"><a href="#">RESET BUTTON</a></button>
+        
+            </div>   
+
+        </form>
+        <p style="text-align: center; margin-top: 2rem; font-weight: 500;"><a href="/login">> Back to login</a></p>
+        </div>
+</div>
+
+    <script defer src="{% static 'landing/javascript/main.js' %}"></script>
+{% endblock %}

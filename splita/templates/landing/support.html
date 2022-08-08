@@ -1,0 +1,50 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+{% block title %}login{% endblock %}
+{% block content %}
+<head>
+<link rel="stylesheet" href="{% static 'landing/css/support.css' %}">
+</head>
+
+<div class="container">
+    <h2 id="login-title" style="margin-top: 4rem;">What can we do for you?</h2>
+    <div class="container1">
+
+        <div class="picture"><img src="{% static 'landing\images\Group 39.svg' %}" alt="login" class="img"></div>
+        <div class="form">
+            
+            <p class="texts">Do you find handling your large JSON 
+                or CSV files and would like to use our services but find somethings unclear?</p>
+            
+            </div>
+    </div>
+    <div class="container1">
+
+        <div class="form">
+            {% csrf_token %}
+            
+            <p class="texts">Is something proving difficult for you 
+                to understand concerning the services 
+                we provide?</p>
+                
+            </div>
+            <div class="picture"><img src="{% static 'landing\images\support-img2.svg' %}" alt="login" class="img"></div>
+    </div>
+
+    <div class="container1">
+<div class="picture"><img src="{% static 'landing\images\support-img3.svg' %}" alt="login"class="img"></div>
+        <div class="form">
+            
+            <p class="texts">Do you have any complaints that you would 
+                like us to look into and resolve?</p>
+            
+            </div>
+    </div>
+    <div id="btnn">
+    <button id="contact-btn"><a href="contact.html">Contact Us</a></button>
+
+    </div>   
+</div>
+
+    <script defer src="{% static 'landing/javascript/main.js' %}"></script>
+{% endblock %}
