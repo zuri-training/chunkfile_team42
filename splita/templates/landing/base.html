@@ -9,90 +9,91 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="{% static 'landing\css\user-styl.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'landing\css\base.css' %}">
+    <script defer src="{% static 'landing\javascript\splita_js.js' %}"></script>
     <title>{% block title %}base{% endblock %}</title>
 </head>
 <body>
     <header>
-        <div class="col-2">
-        <img id="logo" src="{% static 'landing\images\splita_logo.svg' %}" alt="splita_logo">
-        </div>
+        <!--Mobile menu icon with js-->
+        <span id="menu_icon" onclick="menudrop()"><img src="{% static 'landing\images\menu-icon.svg' %}" alt=""></span>
 
-        <div class="col-6 center_txt top-nav-box">
-        <a class="top-nav" href="">Home</a>
-        <a class="top-nav" href="">About</a>
-        <a class="top-nav" href="">Contact Us</a>
-        </div>
+        <!--Menu section-->
+        <div id="menu" class="menu-bar_link hdw-7 hdw-td-12">
 
-        <div class="col-4 center_txt top-nav-box">
-        <a class="fin-sect" id="blue-txt" href="/login">Log In</a>
-        <a href="/signup"><button type="button" class="nav-btn" id="signup-btn">SIGN UP</button></a>
-        </div>
-    </header>
-    <main>
-
-      {% block content %}
-
-      {% endblock %}
-
-    </main>
-
-   <footer>
-        <div class="row side-pad1">
-            <div class="col-12 row">
-                <img class="r_float fin-sect" src="{% static 'landing\images\linkedin_logo.svg' %}" alt="linkedin_logo">
-                <img class="r_float fin-sect" src="{% static 'landing\images\twitter_logo.svg' %}" alt="twitter_logo">
-                <img class="r_float fin-sect" src="{% static 'landing\images\instagram_logo.svg' %}" alt="instagram_logo">
+            <div class="hdw-12 hdw-td-3">
+                <span id="clozbtn">
+                    <button id="cloz" onclick="menudrop()"><img src="{% static 'landing\images\close2.png' %}" alt="close" style="width: 0.8rem; height:0.8rem;"></button>
+                </span>
+                <a href="{% url 'landing' %}"><img src="{% static 'landing\images\splita_logo.svg' %}" alt="splita_logo"></a>
             </div>
 
-            <div class="col-12">
+            <div id="main-menu" class="hdw-12 hdw-td-5 td-menu-bar_link">
+            <a href="{% url 'landing' %}">Home</a>
+            <a href="">About</a>
+            <a href="">Contact Us</a>
+            </div>
+
+            <div class="hdw-12 hdw-td-4 td-menu-bar_link">
+            <a href="{% url 'login' %}" style="color:blue">Log In</a>
+            <a href="{% url 'signup' %}"><button class="navi-btn">SIGN UP</button></a>
+            </div>
+        </div>
+
+    </header>
+
+        {% block content %}
+
+         {% endblock %}
+
+    <footer>
+        <div class="row">
+            <div class="futa-12">
                 <img src="{% static 'landing\images\splita_logof.svg' %}" alt="signup_img">
             </div>
 
-            <div class="col-12">
-                <form class="nosubmit col-5">
-                    <input class="nosubmit" type="search" placeholder="Search">
-                </form>
-            </div>
-
-            <div class="small-txt">
-            <ul class="col-3">
-                <li><a href="">Products</a></li>
-                <li><a href="">Enrichments</a></li>
-                <li><a href="">Use cases</a></li>
-            </ul>
-            <ul class="col-3">
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Services</a></li>
-            </ul>
-            <ul class="col-3">
-                <li><a href="">About</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">How to</a></li>
-                <li><a href="">Storage</a></li>
-            </ul>
-            <ul class="col-3">
-                <li><a href="">Blog</a></li>
-                <li><a href="">Data Community</a></li>
-                <li><a href="">Video demos</a></li>
-                <li><a href="">Support</a></li>
-            </ul>
-            </div>
-            <p class="col-12 small-txt">
-                <span>Address</span><br/>
-                <span>Lagos, Nigeria</span><br/>
-                <span>Phone: +234 903 426 3462</span><br/>
-                <span>Email: info@splita.com</span>
-            </p>
+            <form class="nosubmit futa-12 futa-td-12">
+                <input class="nosubmit futa-td-7" type="search" placeholder="Search">
+            </form>
         </div>
-        <div class="col-12 footer-2 small-txt">
-            <span class="col-9" id="last-span">
-                <a class="fin-sect" href="">Privacy</a>
-                <a class="fin-sect" href="">Security</a>
-                <a class="fin-sect" href="">Terms of use</a>
+        <div class="row">
+            <span class="futa-4 menu-bar_link2 futa-td-3">
+                <a href="">Products</a>
+                <a href="">Documentation</a>
+                <a href="">Data Community</a>
+                <a href="">Video demos</a>
             </span>
-            <span class="col-3 center_txt">2022 Splita, INC</span>
+
+            <span class="futa-4 menu-bar_link2 futa-td-3">
+                <a href="">Services</a>
+                <a href="">Legal Notice</a>
+                <a href="">Careers</a>
+                <a href="">Partners</a>
+            </span>
+
+            <span class="futa-4 menu-bar_link2 futa-td-3">
+                <a href="">About</a>
+                <a href="">Contact Us</a>
+                <a href="">Support</a>
+                <a href="">FAQs</a>
+            </span>
+
+            <span class="futa-12 futa-td-3" style="font-size:14px;">
+                Address<br/>
+                Lagos, Nigeria<br/>
+                Phone: +234 903 426 3462<br/>
+                Email: info@splita.com
+            </span>
         </div>
     </footer>
+    <div class="row last-span" style="font-size:13px;">
+            <span class="futa-8 futa-td-8">
+                <a class="" href="">Privacy</a>
+                <a class="" href="">Security</a>
+                <a class="" href="">Terms of use</a>
+            </span>
+            <span class="futa-4 futa-td-4" id="center-txt">2022 Splita, INC</span>
+    </div>
+
 </body>
 </html>

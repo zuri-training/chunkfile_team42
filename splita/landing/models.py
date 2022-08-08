@@ -25,7 +25,7 @@ class customuserManager(BaseUserManager):
         if extra_fields.get('is_superuser') is not True:
             raise ValueError('Superuser must have is_superuser=True.')
 
-        return self._create_user(email, password, **extra_fields) 
+        return self._create_user(email, password, **extra_fields)
 
 class customuser(AbstractBaseUser, PermissionsMixin):
     username=None
@@ -33,7 +33,7 @@ class customuser(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(validators = [validators.EmailValidator()], unique=True, max_length = 200)
     fullname = models.CharField(max_length=50, blank=True)
     password = models.CharField( max_length=30, blank=True)
-    profilepic = models.ImageField(null=True, blank=True, upload_to='image/')
+    #profilepic = models.ImageField(null=True, blank=True, upload_to='image/')
 
     objects = customuserManager()
 
