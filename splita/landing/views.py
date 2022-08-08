@@ -4,6 +4,7 @@ from django.contrib.auth import login, authenticate
 from django.contrib import messages
 from .models import customuser
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse
 
 ##test
 #@login_required(login_url='/login') this code would be used when the user wants to acess their dashboard
@@ -57,3 +58,7 @@ def reset(request):
 
 def support(request):
     return render(request, 'landing/support.html')
+    
+    
+def authTable(request):
+    return render(request, 'landing/fileAuthen3.html')
