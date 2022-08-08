@@ -51,7 +51,7 @@ body{
 
 
 /* .left_list{
-    
+
 } */
 
 .left_link{
@@ -64,7 +64,7 @@ body{
     font-weight: 600;
     margin: 40px 30px 40px 30px ;
     font-size: 20px;
-    
+
 }
 
 .splita_icon{
@@ -76,7 +76,7 @@ body{
 
 
 .log_out{
-    margin: 25rem 0 8rem 5px;
+    margin: 26.5rem 0 8rem 5px;
 }
 
 .left_link:active{
@@ -86,7 +86,7 @@ body{
     font-size: 24px;
     padding: 8px 24px;
     margin: 40px 10px;
-} 
+}
 
 .left_link:hover{
     background-color: #060CA1;
@@ -166,8 +166,6 @@ body{
     margin-left: 11.5rem;
 }
 
-
-
 .user_arrow{
     height:12px;
     width: 24px;
@@ -196,10 +194,28 @@ body{
     justify-content: center;
 }
 
-.dropdown-content{
+.dropdown-content {
     display: none;
     position: absolute;
-    min-width: 170px;
+    min-width: 164px;
+    background-color: #fff;
+    margin-left: -9.9rem;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 5px;
+    margin-top: 12px;
+    color: #1F1F1F;
+    border-radius: 8px;
+    box-shadow: 6px 6px 20px rgb(0 0 0 / 10%);
+}
+
+.dropdown-content a{
+    margin: 18px 0 18px 0;
+}
+
+.logout_dropdown{
+    margin-top: 70px !important;
+    color: #F00A0A !important;
 }
 
 .dropdown:active .dropdown-content{
@@ -218,6 +234,10 @@ body{
 .dropdown-content a:active {
     background-color: #ddd;
   }
+
+.dropdown-content a:hover {
+    opacity: 0.7;
+}
 
   .dropdown-content a{
     text-align: left;
@@ -239,7 +259,7 @@ body{
 
 .white_aside_wrap{
     display: flex;
-    
+
 }
 
 .alone_text{
@@ -274,6 +294,7 @@ body{
 .blue_p:active{
     color: #050979;
 }
+
 #blue_p{
     color: #080FC9;
     text-decoration: none;
@@ -302,16 +323,17 @@ body{
     border-radius: 8px;
 
 }
+
 .break_line_rectangle form{
     margin-top: 5rem;
 }
 
 .break_line_content{
     margin: -5.5rem;
-   
+
 }
 
-.meter { 
+.meter {
     height: 10px;
     position: relative;
     background: #d8d7d5;
@@ -330,7 +352,7 @@ body{
 #progress {
     background-color: #5BE060;
     animation: progressBar 3s ease-in-out;
-    animation-fill-mode:both; 
+    animation-fill-mode:both;
 }
 
 @keyframes progressBar {
@@ -338,11 +360,91 @@ body{
   100% { width: 100%; }
 }
 
+.break_line_content{
+    margin: 4.5rem 0 -2.5rem;
+
+}
+
+.progress{
+    height: 20px;
+    background-color: #ccc;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: none;
+}
+
+.progress_bar{
+    padding: 0 0 0 0;
+}
+.upload_text{
+    margin: 6rem 0 60px 0;
+    display: none;
+    color: #2B2B2B;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.file_text {
+    color: #2B2B2B;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.progress .progress-value{
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to left, #51af54, #5BE060);
+    width: 0;
+    border-radius: 8px;
+    /* animation: progress-animation 5s forwards; */
+}
+
+#play-animation{
+    animation: progress-animation 5s forwards;
+}
+
+@keyframes progress-animation{
+    0% {width: 0%;}
+    100%{width: 100%;}
+}
+
+.file_authen2{
+    display: none;
+    margin: 8rem 0 3rem 0;
+}
+
+
+.drop-zone__input{
+    display: none;
+  }
+
+.drop-zone--over {
+border-style: solid;
+}
+
+.drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+  }
 
 
 
-  
-  
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+  }
+
 
 .social_media_link, .social_media_list{
     text-decoration: none;
@@ -352,20 +454,20 @@ body{
     font-weight: 600;
     margin-left: 18px;
     opacity: 0.9;
-    
+
 }
 
 /* main ended */
 /* Aside started */
 aside{
-    padding: 5rem 0 2rem 2rem;
+    padding: 7rem 0 2rem 2rem;
 }
 
 .social_img{
     width: 12%;
     height: 15%;
     margin:0 10px 0 0px;
-    
+
 }
 
 
@@ -373,7 +475,7 @@ aside{
     width: 10%;
     height: 15px;
     margin-right: 10px;
-    
+
 }
 
 
@@ -425,7 +527,7 @@ aside{
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);
     margin: 4rem 16rem;
-    
+
 }
 
 .chunk_btn:active{
@@ -439,8 +541,28 @@ aside{
     opacity: 0.7;
 }
 
+/* .lead_link{
 
+} */
 
+.btn_authen{
+    background-color: #080FC9;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 8rem;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 4rem 16rem;
+  }
+
+.btn_authen:active{
+    background-color: #050979;
+}
+
+.btn_authen:hover{
+    background-color: #060CA1;
+}
 
 /* For mini computers */
 @media(max-width:1024px){
@@ -459,11 +581,11 @@ aside{
         font-weight: 600;
         margin:  40px 30px 40px 30px ;
         font-size: 20px;
-        
+
     }
 
     .log_out{
-        margin: 23rem 0 8rem 10px;
+        margin: 25.5rem 0 8rem 10px;
     }
 
     .big_container{
@@ -489,6 +611,10 @@ aside{
         margin: 2rem 20px 1.5rem;
     }
 
+    .progress_bar{
+        margin: 6rem 0 1rem 0px;
+    }
+
     .dropdown-content a{
         padding: 0;
       }
@@ -499,14 +625,14 @@ aside{
     .social_media_link, .social_media_list{
         font-size: 14px;
         margin-left: 7px;
-        
+
     }
 
     .google_img{
         width: 8%;
         height: 13px;
         margin-right: 8px;
-        
+
     }
 
     .social_img{
@@ -519,6 +645,10 @@ aside{
         margin-left: 0;
     }
 
+    .break_line_content {
+        margin: 4.5rem 0 -4.5rem;
+    }
+
     .chunk_btn{
         padding: 16px 7rem;
         font-size: 24px;
@@ -526,12 +656,16 @@ aside{
         margin: 4rem 6rem 0;
     }
 
+    .btn_authen {
+
+        margin: 4rem 5.5rem;
+    }
+
     .aside_text{
         font-size: 19px;
         font-weight: 500;
     }
-    
-    
+
     .aside_input{
         padding: 12px 5px 12px 5px;
         width: 95%;
@@ -542,7 +676,7 @@ aside{
         margin-bottom: 4rem;
     }
     aside{
-        padding: 7rem 0 2rem 2rem;
+        padding: 6rem 0 4rem 2rem;
     }
 
 }
@@ -560,19 +694,23 @@ aside{
     .left_link{
         margin: 40px 10px;
         font-size: 20px;
-        
+
     }
 
     .left_link:active{
         font-size: 22px;
         padding: 8px 5px 8px 4px;
         margin: 40px 2px;
-    } 
-    
+    }
+
     .left_link:hover{
         font-size: 22px;
         padding: 8px 5px 8px 4px;
         margin: 40px 2px;
+    }
+
+    .progress_bar{
+        margin: 6rem 0 -2rem 0px;
     }
 
     .search_btn {
@@ -587,11 +725,15 @@ aside{
         padding: 16px 6rem;
         font-size: 24px;
         margin: 4rem 2rem;
-        
+
     }
 
     .log_out{
-        margin: 24rem 0 8rem 5px;
+        margin: 27rem 0 8rem 5px;
+    }
+
+    .btn_authen {
+        margin: 4rem 0.5rem;
     }
 }
 
@@ -621,7 +763,7 @@ aside{
     .left_link{
         margin: 25px 15px;
         font-size: 14px;
-        width: 83%; 
+        width: 83%;
         align-items: center;
     }
 
@@ -629,7 +771,9 @@ aside{
         margin-bottom: 7px;
     }
 
-    
+    .progress_bar {
+        margin: 5rem 0 2rem 0px;
+    }
 
     .left_link:active{
         background-color: #050979;
@@ -639,8 +783,8 @@ aside{
         padding:  8px 15px ;
         margin: 25px 15px;
 
-    } 
-    
+    }
+
     .left_link:hover{
         background-color: #060CA1;
         /* box-shadow: 0px 0px 5px rgba(21, 52, 207, 0.8); */
@@ -706,7 +850,7 @@ aside{
         left: 0;
     }
 
-    
+
     .top {
         height: 7.5%;
         margin-left: 0
@@ -752,7 +896,7 @@ aside{
     }
 
     .main_p{
-        width: 26%;
+        width: 40%;
         margin: 10px auto 0;
         line-height: 24px;
     }
@@ -778,9 +922,31 @@ aside{
     .upload_text {
         margin: 3rem 0 3rem 0;
         opacity: 0;
+        display: none;
         color: #2B2B2B;
-        font-size: 22px;
+        font-size: 14px;
         font-weight: 500;
+    }
+
+    .break_line_content {
+        margin: 3.5rem 0 -7.5rem;
+    }
+
+    .file_authen2 {
+        display: none;
+        margin: 5rem 0 3rem 0;
+    }
+
+    .progress_bar {
+        margin: 4rem 0 1rem 0px;
+    }
+
+    .file_text {
+        color: #2B2B2B;
+        font-weight: 500;
+        font-size: 14px;
+        width: 55%;
+        margin: 0 auto;
     }
 
     .grey_capital {
@@ -812,14 +978,14 @@ aside{
         align-items:center;
         justify-content: center;
         padding: 0;
-        grid-template-columns: 50% 50%; 
-        grid-row-gap: 20px;       
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 20px;
     }
 
     .social_link_mobile_bottom{
         margin-left: -18px;
         margin-top: -10rem;
-        
+
     }
 
     .social_link_mobile_bottom2{
@@ -844,7 +1010,7 @@ aside{
         width:16px;
         height: 12px;
     }
-    
+
     .social_move2{
         display: flex;
         align-items: center;
@@ -869,7 +1035,7 @@ aside{
         margin-left: -2rem;
         margin-right: 2rem;
         width: 48%;
-        
+
     }
 
     .aside_input{
@@ -898,6 +1064,17 @@ aside{
     .chunk_btn:active{
         font-size: 18px;
     }
+
+    .btn_authen {
+        padding: 20px 9.85rem;
+        font-size: 16px;
+        margin: 35px auto;
+    }
+
+    .log_out {
+        margin: 31.5rem 0 8rem 5px;
+    }
+
 }
 
 @media(max-width: 375px){
@@ -919,12 +1096,12 @@ aside{
         margin: 0 23px 4rem 23px;
     }
     nav{
-        
+
         padding-top: 3rem;
     }
 
     .main_p {
-        width: 29%;
+        width: 45%;
     }
 
     .user_mobile {
@@ -932,7 +1109,7 @@ aside{
     }
     .aside_content1{
         width: 60%;
-        
+
     }
 
     .align_left{
@@ -942,6 +1119,13 @@ aside{
     .chunk_btn {
         padding: 20px 8.5rem;
     }
+
+    .btn_authen {
+        padding: 20px 8.5rem;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+
 }
 
 @media(max-width: 360px){
@@ -952,22 +1136,46 @@ aside{
 
     .aside_content1{
         margin-right: 0rem;
-        
+
     }
 
-    .search_btn {
+    .main_p {
+        width: 50%;
+    }
+
+   .search_btn {
         width: 72.5%;
+    }
+
+
+    .chunk_btn {
+        padding: 20px 8.1rem;
+    }
+
+    .break_line_rectangle {
+        font-size: 14px;
+        padding: 1rem 0 3rem;
     }
 
     .chunk_btn {
         padding: 20px 8.1rem;
     }
+
+    .btn_authen {
+        padding: 20px 8.1rem;
+
+    }
+
 }
 
 @media(max-width: 320px){
 
     .main_content {
         margin: 0 25px 4rem 20px;
+    }
+
+    .log_out {
+        margin: 32rem 0 8rem 5px;
     }
 
     .top{
@@ -977,6 +1185,10 @@ aside{
     .search_btn {
         width: 75%;
         margin: 20px -3px 20px 5rem;
+    }
+
+    .main_p {
+        width: 55%;
     }
 
     .user_mobile {
@@ -1004,17 +1216,246 @@ aside{
         width: 67%;
     }
 
-    
+
 
     .chunk_btn {
+        padding: 20px 7rem;
+    }
+
+    .btn_authen {
         padding: 20px 7rem;
     }
 
 }
 
 
+/*                       FOR FILE AUTHENTICATION 3 PAGE */
+
+.log_out_authen{
+    margin: 19rem 0 8rem 5px;
+}
+
+.main_authen3{
+    margin: 4.5rem 0rem 4rem 6.5rem;
+    width: 80%;
+
+}
+
+.main_table{
+    background-color: #fff;
+    padding: 40px;
+}
+
+.your_file_text{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+th{
+    font-size: 24px;
+    color: #111111;
+    padding: 15px;
+    border-top: 1px solid #111111;
+    border-left: 1px solid #111111;
+    /* border-right: 0.2px solid #111111; */
+}
+
+tj:nth-last-of-type(1){
+    border-radius: 8px 0 0 0;
+}
+th:nth-of-type(3){
+    border-right: 0.5px solid #111111;
+    border-radius: 0 8px 0 0;
+}
 
 
 
 
-  
+table{
+    /* border: 1px solid black; */
+    border-collapse:separate;
+    border-spacing: 0px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.long-width{
+    width: 70%;
+    margin: 0 3rem;
+    text-align: center;
+}
+
+td{
+    border-top: 1px solid #111111;
+    border-left: 1px solid #111111;
+    font-size: 18px;
+    color: #111111;
+    padding: 25px 15px;
+
+}
+
+.right_td{
+    border-right: 1px solid #111111;
+}
+
+.bottom_td{
+    border-bottom: 1px solid #111111;
+}
+
+.bom_left_radius{
+    border-radius: 0 0 0 8px;
+}
+
+.top_left_radius{
+    border-radius: 8px 0 0 0;
+}
+
+.bom_right_radius{
+    border-radius:  0 0 8px 0;
+}
+/* btn authen started */
+
+.btns{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 40px 0 40px 22rem;
+}
+
+.save_btn {
+    padding: 16px 32px;
+    color: #0912F1;
+    border: 1px solid #0912F1;
+    border-radius: 8px;
+    background-color: #E5E5E5;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.save_btn:hover{
+    color: #060CA1;
+    border: 1px solid #060CA1;
+
+}
+
+.save_btn:active{
+    color:#050979;
+    border: 1px solid #050979;
+}
+
+.download_btn {
+    padding: 16px 32px;
+    background-color: #0912F1;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.download_btn:hover{
+    background-color: #060CA1;
+}
+
+.download_btn:active{
+    background-color: #050979;
+}
+
+@media(max-width: 1024px){
+    .btns {
+        margin: 40px 0 40px 12rem;
+    }
+
+}
+
+@media(max-width: 768px){
+    .main_authen3 {
+        margin: 4.5rem 0rem 4rem 3.5rem;
+        width: 80%;
+    }
+
+    .btns {
+        margin: 40px 0 40px 6rem;
+    }
+
+    .log_out_authen {
+        margin: 17.5rem 0 8rem 5px;
+    }
+
+}
+
+@media(max-width: 425px) {
+    body{
+        background-color: #fff;
+    }
+    .main{
+        background-color: #fff;
+    }
+
+    .main_authen3 {
+        margin: 2.5rem 0rem 0rem 1.5rem;
+        width: 88%;
+    }
+
+    th {
+        font-size: 16px;
+    }
+
+    td {
+        font-size: 14px;
+    }
+
+    td {
+        padding: 15px 15px;
+    }
+    th {
+        padding: 20px;
+    }
+    .your_file_text {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .main_table {
+        padding: 40px 0;
+    }
+
+
+.save_btn {
+    padding: 16px 32px;
+    color: #0912F1;
+    border: 1px solid #0912F1;
+    border-radius: 8px;
+    background-color: #E5E5E5;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    display: flexbox;
+    order: 2;
+}
+
+.download_btn {
+    padding: 16px 32px;
+    background-color: #0912F1;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    margin-bottom: 30px;
+    margin-left: 0;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    display: flexbox;
+    order: -2 !important;
+}
+
+.btns {
+    margin: 40px 0 40px 0rem;
+    display: flex;
+    flex-direction: column;
+    }
+
+}
+
+
+
