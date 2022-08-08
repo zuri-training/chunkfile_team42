@@ -891,10 +891,31 @@ aside{
 
     .upload_text {
         margin: 3rem 0 3rem 0;
-        opacity: 0;
+        display: none;
         color: #2B2B2B;
-        font-size: 22px;
+        font-size: 14px;
         font-weight: 500;
+    }
+
+    .break_line_content {
+        margin: 3.5rem 0 -7.5rem;
+    }
+
+    .file_authen2 {
+        display: none;
+        margin: 5rem 0 3rem 0;
+    }
+
+    .progress_bar {
+        margin: 4rem 0 1rem 0px;
+    }
+
+    .file_text {
+        color: #2B2B2B;
+        font-weight: 500;
+        font-size: 14px;
+        width: 55%;
+        margin: 0 auto;
     }
 
     .grey_capital {
@@ -1094,6 +1115,11 @@ aside{
 
     .search_btn {
         width: 72.5%;
+    }
+
+    .break_line_rectangle {
+        font-size: 14px;
+        padding: 1rem 0 3rem;
     }
 
     .chunk_btn {
