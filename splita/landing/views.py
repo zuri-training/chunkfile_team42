@@ -1,16 +1,20 @@
 from django.shortcuts import redirect, render
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import login, authenticate
 from django.contrib import messages
-from . models import customuser
+from .models import customuser
 from django.contrib.auth.decorators import login_required
 
 ##test
-@login_required(login_url='/login')
+#@login_required(login_url='/login') this code would be used when the user wants to acess their dashboard
 def landing(request):
     return render(request, 'landing/landing.html')
 ##endoftest
 
 def signup(request):
+    return render(request, 'landing/signup.html')
+
+def adduser(request):
     if request.method == "POST":
         fullname = request.POST['fullname']
         email = request.POST['email']
@@ -22,10 +26,10 @@ def signup(request):
 
         newuser = customuser.objects._create_user(email, password, fullname)
         newuser.save()
-        
+
         messages.success(request, "Your account has been successfully created")
-        return redirect('/login')
-     
+        return HttpResponseRedirect(reverse('login'))
+
     return render(request, 'landing/signup.html')
 
 def login_view(request):

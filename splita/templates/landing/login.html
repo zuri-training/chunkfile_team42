@@ -12,7 +12,7 @@
             <h2 id="login-title">Log In</h2>
             <h3>Welcome</h3>
             <p id="login1">Log in to get started</p>
-            <form method="post">
+            <form method="post" action="">
                 {% csrf_token %}
                <table>
                 <tr>
@@ -51,5 +51,4 @@
         </div>
     </div>
 
-    <script defer src="{% static 'landing/javascript/main.js' %}"></script>
 {% endblock %}
