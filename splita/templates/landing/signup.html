@@ -3,13 +3,9 @@
 
 {% block title %}signup{% endblock %}
 {% block content %}
-<<<<<<< HEAD
-    
-=======
 <head>
 <link rel="stylesheet" href="{% static 'landing/css/user-styl2.css' %}">
 </head>
->>>>>>> 107b79007fcccc7dad3169b07511f48131ea3c97
         <section class="row" id="signup_pg_main">
             <div class="col-7">
                 <img  class="center_item" id="signup_img" src="{% static 'landing\images\signup_img.svg' %}" alt="signup_img">
@@ -22,11 +18,7 @@
                     <span class="small-txt"><b>Create an account to get started</b></span>
                 </div>
 
-<<<<<<< HEAD
-                <form method="post">
-=======
                 <form method="post" action="adduser/">
->>>>>>> 107b79007fcccc7dad3169b07511f48131ea3c97
                     {% csrf_token %}
                     <input type="text" name="fullname" id="fullname" placeholder="Full name"><br/>
                     <input type="email" name="email" id="email" placeholder="Email address"><br/>
