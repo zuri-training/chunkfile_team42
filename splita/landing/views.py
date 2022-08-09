@@ -2,12 +2,9 @@ from django.shortcuts import redirect, render
 from django.contrib.auth import login, authenticate
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-<<<<<<< HEAD
 from django.http import HttpResponse
 from .forms import RegistrationForm
-=======
 from django.urls import reverse
->>>>>>> 37ae2bf39ca60a739a9dda00649ec789a6bcca6e
 
 ##test
 @login_required(login_url='/login')
