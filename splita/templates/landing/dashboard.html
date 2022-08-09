@@ -1,7 +1,6 @@
 {% load static %}
 
 
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,9 +10,11 @@
         <title>Dashboard</title>
         <link href="{% static 'landing\css\dashboard.css' %}" rel="stylesheet">
         <link href="{% static 'landing\splita_icon\style.css' %}" rel="stylesheet">
+
         <script src="{& static }"></script>
     <script src="https://kit.fontawesome.com/c423e479ae.js" crossorigin="anonymous"></script>
     <script defer src="{% static 'landing\javascript\dashboard.js' %}"></script>
+
     </head>
     <body>
         <!-- container wrapping all content starts -->
@@ -25,9 +26,7 @@
                 <!-- LOGO DISABLE FOR DESKTOP VIEW-->
                 <div class="brand brand_desktop">
                     <!-- This (The logo)leads back to home page -->
-
                     <a href="#"><img src="{% static 'landing\img\logo1.png' %}" class="brand_img" alt="Splita's Logo"></a>
-
                 </div>
 
 
@@ -42,9 +41,7 @@
                     <!-- TO DISPLAY LOGO FOR MOBILE -->
                     <div class="brand ">
                         <!-- This (The logo)leads back to home page -->
-
                         <a href="#"><img src="{% static 'landing\img\logo1.png' %}" class="brand_img" alt="Splita's Logo"></a>
-
                     </div>
 
                     <!-- DISPLAY USER FOR MOBILE -->
@@ -94,7 +91,6 @@
                                <!-- ended -->
                         <!-- logout sec started -->
                         <li class="left_list log_out">
-
                             <a class= "left_link"href="#">
                                 <div class="splita_icon icon-logout"></div>
                                 <p class="icon-text">Logout</p>
@@ -110,34 +106,24 @@
                 <div class="top">
                     <button class="search_btn">
                         <img src="{% static 'landing\img\searchline.png' %}" alt="Search Line">
-
                         <p class="search_text">Search</p>
-                    </button>
+                    </button>   
                                <!-- USER DISABLE FOR MOBILE -->
                     <div class="user user_desktop">
                         <img src="{% static 'landing\img\Ellipse3.png' %}" class= "user_pic"alt="A user's Pic">
-
                         <div class="user_info">
                             <p class="user_text">Mary Jane</p>
                             <p class="user_text">Maryjane@gmail.com</p>
                         </div>
-
+                        
                         <div class="dropdown">
-                            <button class="dropbtn">
-
+                            <button class="dropbtn"> 
                                 <img src="{% static 'landing\img\user_arrow.png' %}" class= "user_arrow"alt="Arrow Down image">
                             </button>
                             <div class="dropdown-content">
                               <a href="#">Logout</a>
-
-                            </button>
-                            <div class="dropdown-content">
-                              <a href="#">Edit Profile</a>
-                              <a href="#">Help</a>
-                              <a href="#">Settings</a>
-                              <a href="#" class="logout_dropdown">Logout</a>
                             </div>
-                          </div>
+                          </div> 
                     </div>
                 </div>
                 <!-- top ended -->
@@ -149,8 +135,7 @@
                     <!-- White rectangle and aside section started -->
                     <div class="white_aside_wrap">
                         <div class="white_rectangle">
-
-
+        
                             <div class="break_line_rectangle " >
                                 <form  method="post" id="drop_zone"  ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
                                     <img src="{% static 'landing\img\file_3_line.png' %}" alt="An image that represents file">
@@ -159,39 +144,10 @@
                                 <h4 class="grey_capital">JSON, CSV</h4>
                             </form>
                             </div>
-
-                            <!-- Break line rectangle sec started -->
-
-
-                            <div class="break_line_rectangle">
-                                <div class="break_line_content">
-                                    <img src="./img/file_3_line.png" class="break_line_img" alt="An image that represents file">
-                                    <p class="main_p">Drag and drop files, or <a href="#" class= "blue_p">Browse</a></p>
-                                    <h4 class="grey_capital">JSON, CSV</h4>
-
-                                    <input type="file" name="myFile" class="drop-zone__input">
-
-                                </div>
-                                <div class="progress_bar">
-                                    <p class="upload_text">Uploading</p>
-                                    <div class="progress">
-
-                                        <div class="progress-value">
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="file_authen2">
-                                    <p class="file_text">File name : Report.JSON/.CSV </p>
-                                </div>
-                            </div>
-
-
                             <!-- break line rectangle sec ended -->
                             <h4 class="capital_text">OR IMPORT FROM</h4>
                             <ul class="social_media_wrap">
                                 <li class="social_media_list google"><a href="#" class="social_media_link google">
-
                                     <img src="{% static 'landing\img\logos_google-drive.png' %}" class= "google_img" alt="google drive logo">GOOGLE DRIVE</a></li>
                                 <li class="social_media_list"><a href="#" class="social_media_link social_move2">
                                     <img src="{% static 'landing\img\fontisto_dropbox.png' %}" class="social_img" alt="Dropbox logo">DROPBOX</a></li>
@@ -199,7 +155,6 @@
                                     <img src="{% static 'landing\img\logos_microsoft-onedrive.png' %}" class="social_img" alt="one drive logo">ONE DRIVE</a></li>
                                 <li class="social_media_list"><a href="#" class="social_media_link social_link_mobile_bottom2 social_move_1">
                                     <img src="{% static 'landing\img\bi_link-45deg.png' %}" class="social_img" alt="google drive logo">LINK</a></li>
-
                             </ul>
                         </div>
                         <!--white rectangle ended  -->
@@ -219,16 +174,14 @@
                     </div>
                     <!-- White and Aside wrap ended -->
                     <!--  Chunk button alone sec -->
-
-                    <button class="chunk_btn">CHUNK</button>
-
+                    <button class="chunk_btn"><a href="/landing/authTable" style="text-decoration: none; color:#060CA1;">CHUNK</a></button>
+                    
                 </div>
                 <!-- main content started ended -->
             </div>
         </div>
         <!-- container wrapping all content ended -->
-        <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
         <script src="./dashboard.js"></script>
     </body>
-
+    
 </html>
