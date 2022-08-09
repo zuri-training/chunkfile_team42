@@ -13,7 +13,6 @@ body{
     justify-content: center;
     gap: 18vw;
     padding: 1rem;
-    /* border-bottom: 3px solid rgb(175, 171, 171); */
     box-shadow: 2px 2px 4px gray;
 }
 
@@ -80,8 +79,8 @@ label{
     font-size: small;
 }
 
-#btn{
-    width: 440px;
+button#btn{
+    width: 33vw;
     background-color:#080FC9;
     border: solid 1px#080FC9;
     border-radius: 0.4rem;
@@ -260,14 +259,12 @@ li a{
         align-content: center;
         margin: 2rem auto;
     }
-
-    .navbar{
-        display: flex;
-        justify-content: center;
-        gap: 16vw;
-        padding: 1rem;
-        box-shadow: 2px 2px 4px gray;
+    nav.navbar{
+        display: block;
+        box-shadow: none;
     }
+
+   
 
     input.inp {
         width: 65vw;
@@ -278,8 +275,8 @@ li a{
     button.site {
         width: 70vw;
     }
-    button#btn{
-        width: 70vw;
+    #btn{
+        width: 35vw;
         margin-left: auto;
         margin-right: auto;
     }
@@ -311,8 +308,8 @@ li a{
         margin-right: auto;
     }
 
-    #menu {
-        display: flex;
+    div#menu {
+        margin-left: 0;
     }
 
     #home{
@@ -334,8 +331,8 @@ li a{
 }
 
 @media only screen and (max-width: 600px) {
-    button#btn {
-        width: 75vw;
+    #btn {
+        width: 15vw;
     }
 
     .footer-logo{
@@ -346,14 +343,7 @@ li a{
         margin-left: 2rem;
     }
 
-    .navbar{
-        display: flex;
-        justify-content: center;
-        gap: 65vw;
-        padding: 1rem;
-        box-shadow: 2px 2px 4px gray;
-
-    }
+    
 
     .home{
         display: flex;
@@ -450,31 +440,6 @@ li a{
 
     .con img{
         left: 3rem;
-    }
-
-}
-
-@media only screen  and (max-width:450px){
-    .navbar{
-        display: flex;
-        justify-content: center;
-        gap: 53vw;
-        padding: 1rem;
-        /* border-bottom: 3px solid rgb(175, 171, 171); */
-        box-shadow: 2px 2px 4px gray;
-        /* width: fit-content; */
-
-    }
-}
-
-@media only screen  and (max-width:375px){
-    .navbar{
-        display: flex;
-        justify-content: center;
-        gap: 48vw;
-        padding: 1rem;
-        box-shadow: 2px 2px 4px gray;
-
     }
 
 }

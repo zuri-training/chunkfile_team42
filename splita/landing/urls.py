@@ -11,4 +11,5 @@ urlpatterns = [
     path('reset/', views.reset, name='reset'),
     path('support/', views.support, name='support'),
     path('adduser/', views.adduser, name='adduser'),
+    path('authTable/', views.authTable, name='authTable'),
 ]
