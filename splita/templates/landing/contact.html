@@ -1,0 +1,56 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+{% block title %}login{% endblock %}
+{% block content %}
+<head>
+<link rel="stylesheet" href="{% static 'landing/css/contact.css' %}">
+</head>
+
+<div class="container">
+    <div class="picture"><img src="{% static 'landing/images/amico.svg' %}" alt="login" id="img"></div>
+    <div class="form">
+        <h2 id="login-title">Contact Us</h2>
+        
+        <p id="login1">Fill up the form below and we will get back to you promptly</p>
+        <form action="post">
+            {% csrf_token %}
+           <table>
+            <tr>
+                <td>
+                    <p>Full Name</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Full Name" class="inp" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Email Address</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" placeholder="Email Address" class="inp" required>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" placeholder="Message...." class="inp" style="padding-bottom: 12rem;" required>
+                </td>
+            </tr>
+           </table>
+            
+
+           <div id="btnn">
+            <button id="contact-btn"><a href="contact.html">Send message</a></button>
+        
+            </div>   
+
+        </form>
+        </div>
+</div>
+    <script defer src="{% static 'landing/javascript/main.js' %}"></script>
+{% endblock %}
