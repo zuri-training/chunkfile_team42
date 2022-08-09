@@ -1,14 +1,13 @@
 {% load static %}
 
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dashboard</title>
-        <link href="{% static 'landing\css\dashboard.css' %}" rel="stylesheet">
+        <title>Dashboard / File Autentication 3</title>
+        <link href="{% static 'landing\css\file.css' %}" rel="stylesheet">
         <link href="{% static 'landing\splita_icon\style.css' %}" rel="stylesheet">
 
         <script src="{& static }"></script>
@@ -90,7 +89,7 @@
 
                                <!-- ended -->
                         <!-- logout sec started -->
-                        <li class="left_list log_out">
+                        <li class="left_list log_out log_out_authen">
                             <a class= "left_link"href="#">
                                 <div class="splita_icon icon-logout"></div>
                                 <p class="icon-text">Logout</p>
@@ -121,66 +120,115 @@
                                 <img src="{% static 'landing\img\user_arrow.png' %}" class= "user_arrow"alt="Arrow Down image">
                             </button>
                             <div class="dropdown-content">
-                              <a href="#">Logout</a>
+                              <a href="#">Edit Profile</a>
+                              <a href="#">Help</a>
+                              <a href="#">Settings</a>
+                              <a href="#" class="logout_dropdown">Logout</a>
+
                             </div>
                           </div> 
                     </div>
                 </div>
                 <!-- top ended -->
-                <!-- main content started -->
-                <div class="main_content container">
-                    <!-- alone text started -->
-                    <h3 class="alone_text">Upload files</h3>
-                    <!-- alone text ended -->
-                    <!-- White rectangle and aside section started -->
-                    <div class="white_aside_wrap">
-                        <div class="white_rectangle">
-        
-                            <div class="break_line_rectangle " >
-                                <form  method="post" id="drop_zone"  ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
-                                    <img src="{% static 'landing\img\file_3_line.png' %}" alt="An image that represents file">
-                                    <p class="main_p">Drag and drop files, or <a href="#" id= "blue_p" onclick="document.getElementById('selectedFile').click();">Browse</a></p>
-                                    <input type="file" id="selectedFile"  onchange="javascript:addFile()" style="display: none;" />
-                                <h4 class="grey_capital">JSON, CSV</h4>
-                            </form>
-                            </div>
-                            <!-- break line rectangle sec ended -->
-                            <h4 class="capital_text">OR IMPORT FROM</h4>
-                            <ul class="social_media_wrap">
-                                <li class="social_media_list google"><a href="#" class="social_media_link google">
-                                    <img src="{% static 'landing\img\logos_google-drive.png' %}" class= "google_img" alt="google drive logo">GOOGLE DRIVE</a></li>
-                                <li class="social_media_list"><a href="#" class="social_media_link social_move2">
-                                    <img src="{% static 'landing\img\fontisto_dropbox.png' %}" class="social_img" alt="Dropbox logo">DROPBOX</a></li>
-                                <li class="social_media_list"><a href="#" class="social_media_link social_link_mobile_bottom">
-                                    <img src="{% static 'landing\img\logos_microsoft-onedrive.png' %}" class="social_img" alt="one drive logo">ONE DRIVE</a></li>
-                                <li class="social_media_list"><a href="#" class="social_media_link social_link_mobile_bottom2 social_move_1">
-                                    <img src="{% static 'landing\img\bi_link-45deg.png' %}" class="social_img" alt="google drive logo">LINK</a></li>
-                            </ul>
-                        </div>
-                        <!--white rectangle ended  -->
+                <!-- main file authentication content started -->
+                <div class="main_authen3">
+                    <p class="your_file_text">Your Files</p>
 
-                        <!-- Aside sec started -->
-                        <aside>
-                            <form action="#" class="aside_content aside_content1">
-                                <label class="aside_text">Set chunk size</label>
-                                <input type="text" id="text" class="aside_input input_change_text" placeholder="Input number (mb)">
-                            </form>
-                            <form action="#" class="aside_content aside_content2">
-                                <label class="aside_text aside_text2">Line count per package (rows)</label>
-                                <input type="number" id="text" class="aside_input align_left" placeholder=0>
-                            </form>
-                        </aside>
-                        <!-- Aside sec ended -->
+                    <div class="main_table">
+                        <table>
+                            <thead id="head-element">
+                                <tr class="row">
+                                    <th class="top_left_radius">
+                                        Number
+                                    </th>
+                                    <th class="long-width">
+                                        File Name
+                                    </th>
+                                    <th colspan="1">
+                                        Size
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="row">
+                                    <td class="file_detail">
+                                        1
+                                    </td>
+                                    <td class="file_detail long-width">
+                                        CSV_1
+                                    </td>
+                                    <td class="file_detail right_td">
+                                        40MB
+                                    </td>
+                                </tr>
+                                <!-- SECOND FILE -->
+                                <tr class="row">
+                                    <td class="file_detail">
+                                        2
+                                    </td>
+                                    <td class="file_detail long-width">
+                                        CSV_2
+                                    </td>
+                                    <td class="file_detail right_td">
+                                        40MB
+                                    </td>
+                                </tr>
+
+                                <!-- THIRD FILE -->
+                                <tr class="row">
+                                    <td class="file_detail">
+                                        3
+                                    </td>
+                                    <td class="file_detail long-width">
+                                        CSV_3
+                                    </td>
+                                    <td class="file_detail right_td">
+                                        40MB
+                                    </td>
+                                </tr>
+
+                                <!-- FOURTH FILE -->
+                                <tr class="row">
+                                    <td class="file_detail">
+                                        4
+                                    </td>
+                                    <td class="file_detail long-width">
+                                        CSV_4
+                                    </td>
+                                    <td class="file_detail right_td">
+                                        40MB
+                                    </td>
+                                </tr>
+
+                                <!-- FIFTH FILE -->
+                                <tr class="row">
+                                    <td class="file_detail bottom_td bom_left_radius">
+                                        5
+                                    </td>
+                                    <td class="file_detail long-width bottom_td">
+                                        CSV_5
+                                    </td>
+                                    <td class="file_detail right_td bottom_td bom_right_radius">
+                                        40MB
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
                     </div>
-                    <!-- White and Aside wrap ended -->
-                    <!--  Chunk button alone sec -->
-                    <button class="chunk_btn"><a href="/landing/authTable" style="text-decoration: none; color:#060CA1;">CHUNK</a></button>
-                    
+
+                    <div class="btns">
+                        <button class="save_btn btn">Save</button>
+                        <button class="download_btn btn">Download</button>
+                    </div>
+
+
                 </div>
-                <!-- main content started ended -->
+                <!-- main file authentication content ended -->
             </div>
         </div>
         <!-- container wrapping all content ended -->
+        <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
         <script src="./dashboard.js"></script>
     </body>
     
