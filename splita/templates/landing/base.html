@@ -9,98 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
-<<<<<<< HEAD
-    <link href="{% static 'landing\css\user-styl.css' %}" rel="stylesheet">
-=======
     <link rel="stylesheet" href="{% static 'landing\css\base.css' %}">
     <script defer src="{% static 'landing\javascript\splita_js.js' %}"></script>
->>>>>>> 107b79007fcccc7dad3169b07511f48131ea3c97
     <title>{% block title %}base{% endblock %}</title>
 </head>
 <body>
     <header>
-<<<<<<< HEAD
-        <div class="col-2">
-        <img id="logo" src="{% static 'landing\images\splita_logo.svg' %}" alt="splita_logo">
-        </div>
-
-        <div class="col-6 center_txt top-nav-box">
-        <a class="top-nav" href="">Home</a>
-        <a class="top-nav" href="">About</a>
-        <a class="top-nav" href="">Contact Us</a>
-        </div>
-
-        <div class="col-4 center_txt top-nav-box">
-        <a class="fin-sect" id="blue-txt" href="/login">Log In</a>
-        <a href="/signup"><button type="button" class="nav-btn" id="signup-btn">SIGN UP</button></a>
-        </div>
-    </header>
-    <main>
-
-      {% block content %}
-
-      {% endblock %}
-
-    </main>
-
-   <footer>
-        <div class="row side-pad1">
-            <div class="col-12 row">
-                <img class="r_float fin-sect" src="{% static 'landing\images\linkedin_logo.svg' %}" alt="linkedin_logo">
-                <img class="r_float fin-sect" src="{% static 'landing\images\twitter_logo.svg' %}" alt="twitter_logo">
-                <img class="r_float fin-sect" src="{% static 'landing\images\instagram_logo.svg' %}" alt="instagram_logo">
-            </div>
-
-            <div class="col-12">
-                <img src="{% static 'landing\images\splita_logof.svg' %}" alt="signup_img">
-            </div>
-
-            <div class="col-12">
-                <form class="nosubmit col-5">
-                    <input class="nosubmit" type="search" placeholder="Search">
-                </form>
-            </div>
-
-            <div class="small-txt">
-            <ul class="col-3">
-                <li><a href="">Products</a></li>
-                <li><a href="">Enrichments</a></li>
-                <li><a href="">Use cases</a></li>
-            </ul>
-            <ul class="col-3">
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Services</a></li>
-            </ul>
-            <ul class="col-3">
-                <li><a href="">About</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">How to</a></li>
-                <li><a href="">Storage</a></li>
-            </ul>
-            <ul class="col-3">
-                <li><a href="">Blog</a></li>
-                <li><a href="">Data Community</a></li>
-                <li><a href="">Video demos</a></li>
-                <li><a href="">Support</a></li>
-            </ul>
-            </div>
-            <p class="col-12 small-txt">
-                <span>Address</span><br/>
-                <span>Lagos, Nigeria</span><br/>
-                <span>Phone: +234 903 426 3462</span><br/>
-                <span>Email: info@splita.com</span>
-            </p>
-        </div>
-        <div class="col-12 footer-2 small-txt">
-            <span class="col-9" id="last-span">
-                <a class="fin-sect" href="">Privacy</a>
-                <a class="fin-sect" href="">Security</a>
-                <a class="fin-sect" href="">Terms of use</a>
-            </span>
-            <span class="col-3 center_txt">2022 Splita, INC</span>
-        </div>
-    </footer>
-=======
         <!--Mobile menu icon with js-->
         <span id="menu_icon" onclick="menudrop()"><img src="{% static 'landing\images\menu-icon.svg' %}" alt=""></span>
         <!--Menu section-->
@@ -178,6 +92,5 @@
             <span class="futa-4 futa-td-4" id="center-txt">2022 Splita, INC</span>
     </div>
 
->>>>>>> 107b79007fcccc7dad3169b07511f48131ea3c97
 </body>
 </html>
