@@ -1,0 +1,72 @@
+.texts{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2rem;
+    margin-top: 6rem;
+    width: 20rem;
+    
+    margin-bottom: 2rem;
+}
+h2{
+    text-align: center;
+}
+.container{
+    padding-top: 2rem;
+
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    gap: 15rem;
+  
+}
+#btnn{
+    display: flex;
+    justify-content: center;
+}
+#contact-btn{
+    width: 16rem;
+    align-self: center;
+    background-color: #080FC9;
+    border-radius: 0.4rem;
+    border: solid 1px #080FC9;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+#contact-btn a{
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container1{
+        display: flex;
+        justify-content: center;
+        gap: 6vw;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .texts{
+        padding-left: 1rem;
+        font-size: 14px;
+    }
+    #login-title{
+        margin-bottom: 4rem;
+    }
+    .img{
+width: 50vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .img{
+        width: 44vw;
+    }
+    .texts{
+        margin-top: 2rem;
+        width: 10rem;
+        padding-left: 1rem;
+        font-size: 12px;
+    }
+}

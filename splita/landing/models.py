@@ -15,9 +15,7 @@ class customuserManager(BaseUserManager):
         user.save(using=self._db)
         return user
 
-    def create_user(self, email, password=None, **extra_fields):
-        extra_fields.setdefault('is_superuser', False)
-        return self._create_user(email, password, **extra_fields)
+   
 
     def create_superuser(self, email, password, **extra_fields):
         extra_fields.setdefault('is_superuser', True)
@@ -33,7 +31,7 @@ class customuser(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(validators = [validators.EmailValidator()], unique=True, max_length = 200)
     fullname = models.CharField(max_length=50, blank=True)
     password = models.CharField( max_length=30, blank=True)
-    profilepic = models.ImageField(null=True, blank=True, upload_to='image/')
+    # profilepic = models.ImageField(null=True, blank=True, upload_to='image/')
 
     objects = customuserManager()
 
