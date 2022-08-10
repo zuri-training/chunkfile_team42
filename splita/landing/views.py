@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse
 from .forms import RegistrationForm, ContactForm
+from .forms import RegistrationForm
 from django.urls import reverse
 from django.core.mail import send_mail, BadHeaderError
 
@@ -24,7 +25,7 @@ def signup(request):
     else:
         form = RegistrationForm()
 
-    return render(request, 'landing/signup.html')
+    return render(request, 'landing/signup.html', {"form": form})
  
 def login_view(request):
     if request.method == 'POST':

@@ -1,6 +1,9 @@
 import email
 from django import forms
 from .models import customuser
+from django import forms
+from .models import customuser, customuserManager
+from django.contrib.auth.forms import UserCreationForm
 
 class RegistrationForm(forms.ModelForm):
     
