@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Manrope;
+}
+
+body {
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    padding: 10px 20px;
+    row-gap: 2px;
+    box-shadow: 2px 2px 2px gray;
+    margin-bottom: 4px;
+}
+
+.menu-bar_link a:active {
+  color: #080FC9;
+}
+
+.navi-btn {
+    padding: 10px 30px;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.row {
+    width: 100%;
+}
+
+.row::after, #clozbtn::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="hdw-"] {
+    float: left;
+    padding: 0;
+}
+
+[class*="futa-"] {
+    float: left;
+    padding: 20px 10px;
+}
+
+.center-txt {
+    text-align: center;
+}
+
+.last-span, .navi-btn {
+    background-color: #080FC9;
+    color: #FFFFFF;
+}
+
+footer {
+    width: 100%;
+    background-color: #030650;
+    padding: 10px 12px;
+    color: #FFFFFF;
+}
+
+footer a, .last-span a {
+    color: #FFFFFF;
+}
+
+.last-span {
+    width: 100%;
+}
+
+.last-span a {
+    padding: 0 3px;
+}
+
+.menu-bar_link2 a {
+    display: block;
+    padding: 8px 0;
+    font-size: smaller;
+}
+
+form.nosubmit {
+    border: none;
+    padding: 0;
+}
+
+input.nosubmit {
+    border: 1px solid #555;
+    border-radius: 5px;
+    display: block;
+    padding: 9px 4px 9px 40px;
+    background: #FFFFFF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat 12px center;
+}
+
+@media only screen and (max-width: 760px) {
+
+.futa-1, .hdw-1 {width: 8.33%;}
+.futa-2, .hdw-2 {width: 16.66%;}
+.futa-3, .hdw-3 {width: 25%;}
+.futa-4, .hdw-4 {width: 33.33%;}
+.futa-5, .hdw-5 {width: 41.66%;}
+.futa-6, .hdw-6 {width: 50%;}
+.futa-7, .hdw-7 {width: 58.33%;}
+.futa-8, .hdw-8 {width: 66.66%;}
+.futa-9, .hdw-9 {width: 75%;}
+.futa-10, .hdw-10 {width: 83.33%;}
+.futa-11, .hdw-11 {width: 91.66%;}
+.futa-12, .hdw-12 {width: 100%;}
+
+#menu {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    /*overflow: auto;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    height: 80vh;
+    left: 0;
+    line-height: 2rem;
+}
+
+a #menu_icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#cloz {
+    float: right;
+    display: block;
+}
+
+.menu-bar_link a {
+    display: block;
+    padding: 10px 8px;
+    color: #808080;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
+  .futa-td-1, .hdw-td-1 {width: 8.33%;}
+  .futa-td-2, .hdw-td-2 {width: 16.66%;}
+  .futa-td-3, .hdw-td-3 {width: 25%;}
+  .futa-td-4, .hdw-td-4 {width: 33.33%;}
+  .futa-td-5, .hdw-td-5 {width: 41.66%;}
+  .futa-td-6, .hdw-td-6 {width: 50%;}
+  .futa-td-7, .hdw-td-7 {width: 58.33%;}
+  .futa-td-8, .hdw-td-8 {width: 66.66%;}
+  .futa-td-9, .hdw-td-9 {width: 75%;}
+  .futa-td-10, .hdw-td-10 {width: 83.33%;}
+  .futa-td-11, .hdw-td-11 {width: 91.66%;}
+  .futa-td-12, .hdw-td-12 {width: 100%;}
+
+  #menu {
+    display: block;
+    
+  }
+
+  #menu_icon, #clozbtn {
+    display: none;
+}
+
+.td-menu-bar_link a {
+    display: inline-block;
+    padding: 0 8px;
+    color: #808080;
+}
+
+.td-menu-bar_link {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#main-menu {
+    padding-top: 14px;
+}
+
+}
