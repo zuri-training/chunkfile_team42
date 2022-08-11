@@ -12,7 +12,7 @@
             <h2 id="login-title">Log In</h2>
             <h3>Welcome</h3>
             <p id="login1">Log in to get started</p>
-            <form method="post">
+            <form method="post" action="">
                 {% csrf_token %}
                <table>
                 <tr>
@@ -30,7 +30,7 @@
                     <input type="checkbox" name="remember" value=" remember-me">
                     <label for="remember">Remember me</label>
                 </div>
-            <a href="#" id="forgot">Forgot Password</a>
+            <a href="/reset" id="forgot">Forgot Password</a>
             </div>
 
             <button id="btn">Log In</button>
@@ -44,12 +44,11 @@
             <p id="login2">Login With</p>
            <div class="btns">
             <button class="site"><div class="logos"><img src="{% static 'landing/images/flat-color-icons_google.svg' %}" alt="" style="width: 25px; height:25px; background-color:white"><a href="#"><p id="google">Google</p></a></div></button>
-            <button class="site"><div class="logos"><img src="{% static 'landing/images/github.svg' %}" alt="" style="width: 30px; height:30px; background-color:white"><a href="#"><p id="github">Github</p></a></div></button>
+            <button class="site"><div class="logos"><img src="{% static 'landing/images/github_logo.svg' %}" alt="" style="width: 30px; height:30px; background-color:white"><a href="#"><p id="github">Github</p></a></div></button>
            </div>
 
             <p>Don't have an account?  <a href="/signup" id="signup"> Sign up</a></p>
         </div>
     </div>
 
-    <script defer src="{% static 'landing/javascript/main.js' %}"></script>
 {% endblock %}
