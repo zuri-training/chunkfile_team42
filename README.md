@@ -4,7 +4,8 @@ Team42 is engaged in building a platform that manipulates files with emphasis on
 
 # Welcome
 
-Welcome to Splita doc, we are working to create a simple and user friendly platform that splits csv and json files. Below is a short guide to help you through the splitting process. 
+Welcome to Splita doc,we are working to create a simple and user friendly platform that splits csv and json files. Below is a short guide to help you through the splitting process.
+
 
 # Our Solution
 
