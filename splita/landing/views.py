@@ -6,11 +6,11 @@ from django.http import HttpResponse
 from .forms import RegistrationForm
 from django.urls import reverse
 
-##test
-@login_required(login_url='/login')
+
+
 def landing(request):
     return render(request, 'landing/landing.html')
-##endoftest
+
 
 def signup(request):
     if request.method == 'POST':
@@ -23,7 +23,7 @@ def signup(request):
         form = RegistrationForm()
 
     return render(request, 'landing/signup.html', {"form": form})
- 
+
 def login_view(request):
     if request.method == 'POST':
         email = request.POST['email']
@@ -31,15 +31,13 @@ def login_view(request):
         user = authenticate(request, email=email, password=password)
         if user is not None:
             login(request, user)
-            return redirect('/landing')
+            return redirect('prototype:dashboard')
         else:
             messages.error(request, 'Email or Password does not exist')
-    
+
     return HttpResponse(request, 'landing/login.html')
 
-def dashboard(request):
-    return render(request, 'landing/dashboard.html')
-    
+
 def contact(request):
     return render(request, 'landing/contact.html')
 
@@ -48,7 +46,6 @@ def reset(request):
 
 def support(request):
     return render(request, 'landing/support.html')
-    
-    
+
 def authTable(request):
     return render(request, 'landing/fileAuthen3.html')
