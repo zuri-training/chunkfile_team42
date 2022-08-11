@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap');
+
+/* General style */
+
+.menu_link a:active {
+  color: #080FC9;
+}
+
+.nav-btn {
+    padding: 10px 30px;
+    border: 1px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 0;
+}
+
+.row {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 20px 10px;
+}
+
+/*[class*="col-"] {
+  width: 100%;
+}*/
+
+/* main */
+main {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 10px 12px;
+}
+
+.box-img, .boxed > span, .center-txt {
+    text-align: center;
+}
+
+input[type=submit], .nav-btn, .last-span, .blue-bg {
+    background-color: #080FC9;
+    color: #FFFFFF;
+}
+
+#collab_logo {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#collab_logo > img {
+    padding: 0 10px;
+}
+
+.small-txt {
+    font-size: small;
+}
+
+.smaller-txt {
+    font-size: smaller;
+}
+
+.menu_link a {
+    display: block;
+    padding: 10px 8px;
+    color: #808080;
+    font-size: 20px;
+}
+
+.menu_link img {
+    padding: 0;
+}
+
+.boxed {
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 10px 40px;
+    font-size: small;
+    padding: 5px 12px;
+}
+
+.landing_first, .dev_bloc {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /*margin: 10px 0;*/
+}
+
+.landing_first button {
+    width: 100%;
+}
+
+#last_word {
+    text-align: center;
+}
+
+.last-span a {
+    padding: 0 3px;
+}
+
+.menu_link2 a {
+    display: block;
+    padding: 14px 0;
+    font-size: 14px;
+}
+
+
+
+.flexi {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 760px) {
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+#menu {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    /*overflow: auto;*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+a #menu_icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#close {
+    float: right;
+    display: block;
+}
+
+.menu_link {
+    position: relative;
+    display: inline-block;
+}
+
+.dev_bloc {
+    flex-direction: column;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-td-1 {width: 8.33%;}
+  .col-td-2 {width: 16.66%;}
+  .col-td-3 {width: 25%;}
+  .col-td-4 {width: 33.33%;}
+  .col-td-5 {width: 41.66%;}
+  .col-td-6 {width: 50%;}
+  .col-td-7 {width: 58.33%;}
+  .col-td-8 {width: 66.66%;}
+  .col-td-9 {width: 75%;}
+  .col-td-10 {width: 83.33%;}
+  .col-td-11 {width: 91.66%;}
+  .col-td-12 {width: 100%;}
+
+  #menu {
+    display: block;
+  }
+
+  #menu_icon, #closebtn {
+    display: none;
+}
+
+/*.td-menu_link a {
+    display: inline-block;
+    padding: 0 8px;
+    color: #808080;
+}
+
+.td-menu_link {
+    text-align: center;
+    padding: 10px 0;
+}*/
+
+#main-menu {
+    padding-top: 60px;
+}
+
+.steps_img {
+    width: 265px;
+    height: 365px;
+}
+
+#collab_logo img {
+    width: 100px;
+    height: 30px;
+}
+
+.first_word {
+    padding: 100px 0 0 80px;
+}
+
+.first_word h3 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.landing_first button {
+    width: 40%;
+}
+
+.works, b {
+    font-size: 28px;
+}
+
+.grow_word {
+    font-size: medium;
+    padding-top: 150px;
+    padding-left: 100px;
+}
+
+.signup-form b {
+    font-size: medium;
+}
+
+#signup_pg_main {
+    padding: 120px 0;
+}
+
+#signup_img {
+    padding-top: 100px;
+    width: 450px;
+    height: 420px;
+}
+
+.side-pad {
+    padding: 0 100px;
+}
+
+.r_float {
+    float: right;
+}
+
+}
+
+
+.rw_1 {
+    padding-top: 110px;
+}
+
+
+
+.side-pad1 {
+    padding: 10px 50px;
+}
+
+.fin-sect {
+    padding-right: 30px;
+}
+
+/* Style for header */
+
+#blue-txt {
+    color: #080FC9;
+    font-size: 16px;
+}
+
+.top-nav {
+    color: #808080;
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+.top-nav-box {
+    padding: 24px 0;
+}
+
+.btn2 {
+    display: inline-flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.btn2 span {
+    padding-left: 4px;
+}
+
+/* Style for main */
+
+
+
+
+
+#login_img {
+    padding-top: 130px;
+}
+
+#r-txt {
+    text-align: right;
+}
+
+.no-pad {
+    padding: 0;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=submit], .btn {
+    width: 100%;
+    margin: 7px 0;
+    padding: 14px 12px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+#or-styl {
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #000;
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+#or-styl span {
+    background:#fff;
+    padding:0 10px;
+}
+
+.below_form {
+    margin-top: 25px;
+}
+
+
+
+
+

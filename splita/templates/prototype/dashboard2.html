@@ -1,0 +1,63 @@
+{% extends 'prototype/base_dashboard.html' %}
+{% load static %}
+
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<!-- main content started -->
+<div class="main_content container">
+    <!-- alone text started -->
+    <h3 class="alone_text">Upload files</h3>
+    <!-- alone text ended -->
+    <!-- White rectangle and aside section started -->
+    <div class="white_aside_wrap">
+        <div class="white_rectangle">
+
+            <div class="break_line_rectangle " >
+                <form  method="post" id="drop_zone" action="splita/" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <img src="{% static 'landing\img\file_3_line.png' %}" alt="An image that represents file">
+                    <p class="main_p">Drag and drop files, or <a href="#" id= "blue_p" onclick="document.getElementById('selectedFile').click();">Browse</a></p>
+                    <input type="file" id="selectedFile"  name="selectedfile" required/>
+                    <h4 class="grey_capital">JSON, CSV</h4>
+
+            <!-- break line rectangle sec ended -->
+                    <h4 class="capital_text">OR IMPORT FROM</h4>
+                    <ul class="social_media_wrap">
+                        <li class="social_media_list google"><a href="#" class="social_media_link google">
+                            <img src="{% static 'landing\img\logos_google-drive.png' %}" class= "google_img" alt="google drive logo">GOOGLE DRIVE</a></li>
+                        <li class="social_media_list"><a href="#" class="social_media_link social_move2">
+                            <img src="{% static 'landing\img\fontisto_dropbox.png' %}" class="social_img" alt="Dropbox logo">DROPBOX</a></li>
+                        <li class="social_media_list"><a href="#" class="social_media_link social_link_mobile_bottom">
+                            <img src="{% static 'landing\img\logos_microsoft-onedrive.png' %}" class="social_img" alt="one drive logo">ONE DRIVE</a></li>
+                        <li class="social_media_list"><a href="#" class="social_media_link social_link_mobile_bottom2 social_move_1">
+                            <img src="{% static 'landing\img\bi_link-45deg.png' %}" class="social_img" alt="google drive logo">LINK</a></li>
+                    </ul>
+
+        <!--white rectangle ended  -->
+
+        <!-- Aside sec started -->
+                    <aside>
+                        <div class="aside_content aside_content1">
+                            <label class="aside_text">Set chunk size</label>
+                            <input type="number" id="chunk_mb_size" name="chunk_mb_size" class="aside_input input_change_text" min="1" max="10" placeholder="Input number (mb)" disabled>
+                        </div>
+                        <div class="aside_content aside_content2">
+                            <label class="aside_text aside_text2">Line count per package (rows)</label>
+                            <input type="number" id="chunk_row_size" name="chunk_row_size" min="10" max="200" class="aside_input align_left" placeholder=0 required>
+                        </div>
+                    </aside>
+
+        <!-- Aside sec ended -->
+
+    <!-- White and Aside wrap ended -->
+    <!--  Chunk button alone sec -->
+                    <input class="chunk_btn" type="submit" value="CHUNK" style="text-decoration: none; color:#060CA1;"/>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- main content started ended -->
+{% endblock %}
+</div>

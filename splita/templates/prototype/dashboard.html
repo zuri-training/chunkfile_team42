@@ -1,3 +1,6 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,9 +8,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dashboard</title>
-        <link rel="stylesheet" href="./css/dashboard.css">
-        <link rel="stylesheet" href="./splita_icon/style.css">
+        <link href="{% static 'landing\css\dashboard.css' %}" rel="stylesheet">
+        <link href="{% static 'landing\splita_icon\style.css' %}" rel="stylesheet">
+
+        <script src="{& static }"></script>
     <script src="https://kit.fontawesome.com/c423e479ae.js" crossorigin="anonymous"></script>
+    <script defer src="{% static 'landing\javascript\dashboard.js' %}"></script>
 
     </head>
     <body>
@@ -20,7 +26,7 @@
                 <!-- LOGO DISABLE FOR DESKTOP VIEW-->
                 <div class="brand brand_desktop">
                     <!-- This (The logo)leads back to home page -->
-                    <a href="#"><img src="./img/logo1.png" class="brand_img" alt="Splita's Logo"></a>
+                    <a href="#"><img src="{% static 'landing\img\logo1.png' %}" class="brand_img" alt="Splita's Logo"></a>
                 </div>
 
 
@@ -35,12 +41,12 @@
                     <!-- TO DISPLAY LOGO FOR MOBILE -->
                     <div class="brand ">
                         <!-- This (The logo)leads back to home page -->
-                        <a href="#"><img src="./img/logo1.png" class="brand_img" alt="Splita's Logo"></a>
+                        <a href="#"><img src="{% static 'landing\img\logo1.png' %}" class="brand_img" alt="Splita's Logo"></a>
                     </div>
 
                     <!-- DISPLAY USER FOR MOBILE -->
                     <div class="user user_mobile">
-                        <img src="./img/Ellipse3.png" class= "user_pic"alt="A user's Pic">
+                        <img src="{% static 'landing\img\Ellipse3.png' %}" class= "user_pic"alt="A user's Pic">
                         <div class="user_info">
                             <p class="user_text">Mary Jane</p>
                             <p class="user_text">Maryjane@gmail.com</p>
@@ -99,25 +105,25 @@
                 <!-- top sec started -->
                 <div class="top">
                     <button class="search_btn">
-                        <img src="./img/searchline.png" alt="Search Line">
+                        <img src="{% static 'landing\img\searchline.png' %}" alt="Search Line">
                         <p class="search_text">Search</p>
-                    </button>   
+                    </button>
                                <!-- USER DISABLE FOR MOBILE -->
                     <div class="user user_desktop">
-                        <img src="./img/Ellipse3.png" class= "user_pic"alt="A user's Pic">
+                        <img src="{% static 'landing\img\Ellipse3.png' %}" class= "user_pic"alt="A user's Pic">
                         <div class="user_info">
                             <p class="user_text">Mary Jane</p>
                             <p class="user_text">Maryjane@gmail.com</p>
                         </div>
-                        
+
                         <div class="dropdown">
-                            <button class="dropbtn"> 
-                                <img src="./img/user_arrow.png" class= "user_arrow"alt="Arrow Down image">
+                            <button class="dropbtn">
+                                <img src="{% static 'landing\img\user_arrow.png' %}" class= "user_arrow"alt="Arrow Down image">
                             </button>
                             <div class="dropdown-content">
                               <a href="#">Logout</a>
                             </div>
-                          </div> 
+                        </div>
                     </div>
                 </div>
                 <!-- top ended -->
@@ -129,66 +135,56 @@
                     <!-- White rectangle and aside section started -->
                     <div class="white_aside_wrap">
                         <div class="white_rectangle">
-                            <!-- Break line rectangle sec started -->
 
-                            
-                            <div class="break_line_rectangle">
-                                <p class="upload_text">Uploading</p>
-                                <div class="break_line_content">
-                                    <img src="./img/file_3_line.png" class="break_line_img" alt="An image that represents file">
-                                    <p class="main_p">Drag and drop files, or <a href="#" class= "blue_p">Browse</a></p>
+                            <div class="break_line_rectangle " >
+                                <form  method="post" id="drop_zone"  ondrop="dropHandler(event);" ondragover="dragOverHandler(event);" action="splita/" enctype="multipart/form-data">
+                                    <img src="{% static 'landing\img\file_3_line.png' %}" alt="An image that represents file">
+                                    <p class="main_p">Drag and drop files, or <a href="#" id= "blue_p" onclick="document.getElementById('selectedFile').click();">Browse</a></p>
+                                    <input type="file" id="selectedFile"  onchange="javascript:addFile()" style="display: none;" />
                                     <h4 class="grey_capital">JSON, CSV</h4>
-                                    
-                                    <input type="file" name="myFile" class="drop-zone__input">
-                                </div>
 
-
-                                <div class="progress">
-                                    
-                                    <div class="progress-value">
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        
                             <!-- break line rectangle sec ended -->
-                            <h4 class="capital_text">OR IMPORT FROM</h4>
-                            <ul class="social_media_wrap">
-                                <li class="social_media_list google"><a href="#" class="social_media_link google">
-                                    <img src="./img/logos_google-drive.png" class= "google_img" alt="google drive logo">GOOGLE DRIVE</a></li>
-                                <li class="social_media_list"><a href="#" class="social_media_link social_move2">
-                                    <img src="./img/fontisto_dropbox.png" class="social_img" alt="Dropbox logo">DROPBOX</a></li>
-                                <li class="social_media_list"><a href="#" class="social_media_link social_link_mobile_bottom">
-                                    <img src="./img/logos_microsoft-onedrive.png" class="social_img" alt="one drive logo">ONE DRIVE</a></li>
-                                <li class="social_media_list"><a href="#" class="social_media_link social_link_mobile_bottom2 social_move_1">
-                                    <img src="./img/bi_link-45deg.png" class="social_img" alt="google drive logo">LINK</a></li>
-                            </ul>
-                        </div>
+                                    <h4 class="capital_text">OR IMPORT FROM</h4>
+                                    <ul class="social_media_wrap">
+                                        <li class="social_media_list google"><a href="#" class="social_media_link google">
+                                            <img src="{% static 'landing\img\logos_google-drive.png' %}" class= "google_img" alt="google drive logo">GOOGLE DRIVE</a></li>
+                                        <li class="social_media_list"><a href="#" class="social_media_link social_move2">
+                                            <img src="{% static 'landing\img\fontisto_dropbox.png' %}" class="social_img" alt="Dropbox logo">DROPBOX</a></li>
+                                        <li class="social_media_list"><a href="#" class="social_media_link social_link_mobile_bottom">
+                                            <img src="{% static 'landing\img\logos_microsoft-onedrive.png' %}" class="social_img" alt="one drive logo">ONE DRIVE</a></li>
+                                        <li class="social_media_list"><a href="#" class="social_media_link social_link_mobile_bottom2 social_move_1">
+                                            <img src="{% static 'landing\img\bi_link-45deg.png' %}" class="social_img" alt="google drive logo">LINK</a></li>
+                                    </ul>
+
                         <!--white rectangle ended  -->
 
                         <!-- Aside sec started -->
-                        <aside>
-                            <form action="#" class="aside_content aside_content1">
-                                <label class="aside_text">Set chunk size</label>
-                                <input type="text" id="text" class="aside_input input_change_text" placeholder="Input number (mb)">
-                            </form>
-                            <form action="#" class="aside_content aside_content2">
-                                <label class="aside_text aside_text2">Line count per package (rows)</label>
-                                <input type="number" id="text" class="aside_input align_left" placeholder=0>
-                            </form>
-                        </aside>
+                                    <aside>
+                                        <div class="aside_content aside_content1">
+                                            <label class="aside_text">Set chunk size</label>
+                                            <input type="number" id="chunk_mb_size" name="chunk_mb_size" class="aside_input input_change_text" min="1" max="10" placeholder="Input number (mb)" disabled>
+                                        </div>
+                                        <div class="aside_content aside_content2">
+                                            <label class="aside_text aside_text2">Line count per package (rows)</label>
+                                            <input type="number" id="chunk_row_size" name="chunk_row_size" min="10" max="100" class="aside_input align_left" placeholder=0 required>
+                                        </div>
+                                    </aside>
+
                         <!-- Aside sec ended -->
-                    </div>
+
                     <!-- White and Aside wrap ended -->
                     <!--  Chunk button alone sec -->
-                    <button class="chunk_btn">CHUNK</button>
-                    
-                </div>
+                                    <button class="chunk_btn"><a href="/landing/authTable" style="text-decoration: none; color:#060CA1;">CHUNK</a></button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
                 <!-- main content started ended -->
+                </div>
             </div>
-        </div>
         <!-- container wrapping all content ended -->
         <script src="./dashboard.js"></script>
     </body>
-    
+
 </html>
