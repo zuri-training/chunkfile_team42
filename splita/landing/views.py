@@ -77,4 +77,4 @@ def support(request):
 
 
 def authTable(request):
-    return render(request, 'landing/fileAuthen3.html')
+    return render(request, 'landing/fileAuthen.html')
