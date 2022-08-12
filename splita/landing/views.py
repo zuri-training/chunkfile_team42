@@ -41,10 +41,10 @@ def signup(request):
 
         newuser = customuser.objects._create_user(email, password)
         newuser.save()
-        
+
         messages.success(request, "Your account has been successfully created")
         return redirect('/login')
-     
+
     return render(request, 'landing/signup.html')
 
 def login_view(request):
@@ -68,11 +68,11 @@ def contact(request):
 	if request.method == 'POST':
 		form = ContactForm(request.POST)
 		if form.is_valid():
-			subject = "Inquiry" 
+			subject = "Inquiry"
 			body = {
-			'fullname': form.cleaned_data['fullname'], 
-			'email': form.cleaned_data['email'], 
-			'message':form.cleaned_data['message'], 
+			'fullname': form.cleaned_data['fullname'],
+			'email': form.cleaned_data['email'],
+			'message':form.cleaned_data['message'],
 			}
 			message = "\n".join(body.values())
 
@@ -81,13 +81,14 @@ def contact(request):
 			except BadHeaderError:
 				return HttpResponse('Invalid header found.')
 			return HttpResponse('Success! Thank you for your message.')
-      
+
 	form = ContactForm()
 	return render(request, "landing/contact.html", {'form':form})
 
 def successView(request):
     return HttpResponse('Success! Thank you for your message.')
     return render(request, 'landing/contact.html')
+	
 def reset(request):
     return render(request, 'landing/password_reset.html')
 
@@ -99,6 +100,7 @@ def authTable(request):
 
 def about(request):
     return render(request, 'landing/about_us.html')
+
 def password_reset_request(request):
 	if request.method == "POST":
 		password_reset_form = PasswordResetForm(request.POST)
