@@ -1,0 +1,145 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'landing//css/style.css' %}">
+<script defer src="{% static 'landing/javascript/main.js' %}"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div id="menu"><img src="{% static 'landing/images/menu.png' %}"alt=""></div>
+<div class="logo"><img src="{% static 'landing/images/logo.svg' %}"alt="">
+</div>
+<div id="home">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact Us</a>
+</div>
+<div class="nav-btn"><a href="login.html" ><p id="nav-text1">Login</p></a>
+    <button id="nav-btn2"><a href="signup.html"><p id="nav-text2">SIGN UP</p></a></button></div>
+    </nav>
+    <div id="sidebar">
+        <button id="close"><img src="{% static 'landing/images/close2.png' %}" alt="close" style="width: 1rem; height:1rem;"></button>
+        <ul>
+            <li>
+    <a href="#">Home</a>
+            </li>
+            <li>
+    <a href="#">About</a>
+            </li>
+            <li>
+    <a href="#">Contact Us</a>
+            </li>
+            <li>
+                <a href="#">Sign Up</a>
+                        </li>
+                        <li>
+                            <a href="#">Login</a>
+                                    </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="picture"><img src="{% static 'landing/images/persons.svg' %}" alt="" id="img"></div>
+        <div class="form">
+            <h2 id="login-title">Log In</h2>
+            <h3>Welcome</h3>
+            <p id="login1">Log in to get started</p>
+            <form action="">
+               <table>
+                <tr>
+                    <td>
+                        <input type="email" placeholder="Email Address" class="inp" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" placeholder="Password" class="inp" required>
+
+                    </td>
+                </tr>
+               </table>
+                <div class="saved"><div class="remember">
+                    <input type="checkbox" name="remember" value=" remember-me">
+                    <label for="remember">Remember me</label>
+                </div>
+            <a href="#" id="forgot">Forgot Password</a>
+            </div>
+
+            <button id="btn">Log In</button>
+
+            </form>
+            <div class="or-style">
+                <div class="line"></div>
+                <h4>OR</h4>
+                <div class="line"></div>
+            </div>
+            <p id="login2">Login With</p>
+           <div class="btns">
+            <button class="site"><div class="logos"><img src="{% static 'landing/images/flat-color-icons_google.svg' %}" alt="" style="width: 25px; height:25px; background-color:white"><a href="#"><p id="google">Google</p></a></div></button>
+            <button class="site"><div class="logos"><img src="{% static 'landing/images/github.svg' %}" alt="" style="width: 30px; height:30px; background-color:white"><a href="#"><p id="github">Github</p></a></div></button>
+           </div>
+
+            <p>Don't have an account?  <a href="#" id="signup"> Sign up</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="{% static 'landing/images/logo2.svg' %}" alt="">
+            <div class="home">
+                <a href="#"><img src="{% static 'landing/images/Frame 137.svg' %}" alt=""></a>
+                <a href="#"><img src="{% static 'landing/images/Frame 138.svg' %}" alt=""></a>
+                <a href="#"><img src="{% static 'landing/images/Frame 139.svg' %}" alt=""></a>
+            </div>
+        </div>
+        <div class="con">
+            <input type="text" />
+            <img src="{% static 'landing/images/Vector.svg' %}" />
+        </div>
+        <div class="list">
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Enrichments</a></li>
+                <li><a href="#">Use cases</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">FAQ's</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">How to</a></li>
+                <li><a href="#">Storage</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Data Community</a></li>
+                <li><a href="#">Video Demos</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+        <div id="address">
+            <strong>Address</strong>
+            <p>Lagos, Nigeria</p>
+            <p>Phone  +234 903 426 3462</p>
+            <p>Email  info@splita.com</p>
+        </div>
+    </div>
+    <div id="others">
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Term of use</a></li>
+        </ul>
+        <p>2022 Splita, INC</p>
+    </div>
+</body>
+</html>

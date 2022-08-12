@@ -1,0 +1,9 @@
+hello
+<table>
+{% for file in mydocument %}
+<tr>
+    <td>{{ file.id }}</td>
+    <td>{{ file.file_name }}</td>
+</tr>
+{% endfor %}
+</table>

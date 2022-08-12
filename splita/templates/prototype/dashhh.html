@@ -1,0 +1,12 @@
+<form action="splita/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div>
+        <input type="file" name="file-name" id="file-name">
+        <label for="file-name">
+            <b>Choose a file</b><span>or drag it here</span>
+        </label>
+        <button type="submit">chunk</button>
+    </div>
+    <label for="chunksize">Chunk Size</label>
+    <input type="number" name="chunksize" id="chunksize">
+</form>

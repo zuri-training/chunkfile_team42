@@ -1,0 +1,14 @@
+{% extends 'prototype/base_dashboard.html' %}
+{% load static %}
+
+{% block title %}login{% endblock %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% for myfile in myfiles %}
+      <p>{{myfile}}</p>
+    {% endfor %}
+</form>
+
+{% endblock %}
