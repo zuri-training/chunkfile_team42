@@ -1,12 +1,12 @@
-import uuid
 from django.db import models
+from landing.models import customuser
+User = customuser
 
 # Create your models here.
 
 
-class Document(models.Model):
-    docfile_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+class Documents(models.Model):
+    file_name = models.CharField(max_length=150, null=True)
     docfile = models.FileField(upload_to='prototype')
-    uploaded_at = models.DateTimeField(auto_now_add=True)
-    #user = models.ForeignKey(user)
-
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    file_size = models.CharField(max_length=50, null=True)
