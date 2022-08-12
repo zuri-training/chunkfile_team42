@@ -1,9 +1,10 @@
 {% extends 'landing/base.html' %}
 {% load static %}
-{% block title %}login{% endblock %}
+
+{% block title %}Home{% endblock %}
 {% block content %}
 <head>
-<link rel="stylesheet" href="{% static 'css/user-styl2.css' %}">
+<link rel="stylesheet" href="{% static 'landing/css/user-styl2.css' %}">
 </head>
 
 <main>
@@ -19,14 +20,14 @@
             </div>
 
             <div class="col-12 col-td-6 box-img">
-                <img src="{% static 'images/box-img.svg' %}" alt="box-img" class="steps_img">
+                <img src="{% static 'landing/images/box-img.svg' %}" alt="box-img" class="steps_img">
             </div>
         </div>
 
         <h2 class="works center-txt">How it works</h2>
 
         <div class="row">
-            <div class="col-5 col-td-6 landing_first"><img src="{% static 'images/landing_step1.svg' %}" alt="" class="steps_img"></div>
+            <div class="col-5 col-td-6 landing_first"><img src="{% static 'landing/images/landing_step1.svg' %}" alt="" class="steps_img"></div>
             <div class="col-7 small-txt col-td-6 grow_word">
                 <b>Step 1</b><br>
                 Sign up and create an account if you have not registered.<br>
@@ -40,13 +41,13 @@
                 Upload your file in the Dashboard section and set your chunk size
             </div>
             <div class="col-5 col-td-6 landing_first">
-                <img src="{% static 'images/landing_step2.svg' %}" alt="" class="steps_img">
+                <img src="{% static 'landing/images/landing_step2.svg' %}" alt="" class="steps_img">
             </div>
         </div>
 
         <div class="row">
             <div class="col-5 col-td-6 landing_first">
-                <img src="{% static 'images/landing_step3.svg' %}" alt="" class="steps_img">
+                <img src="{% static 'landing/images/landing_step3.svg' %}" alt="" class="steps_img">
             </div>
             <div class="col-7 small-txt col-td-6 grow_word">
                 <b>Step 3</b><br>
@@ -60,18 +61,18 @@
                 Download your file for use and also have the option of saving your file on our platform
             </span>
             <span class="col-5 col-td-6 landing_first">
-                <img src="{% static 'images/landing_step4.svg' %}" alt="" class="steps_img">
+                <img src="{% static 'landing/images/landing_step4.svg' %}" alt="" class="steps_img">
             </span>
         </div>
 
         <div class="row">
             <h5 class="center-txt">Trusted by renowned companies</h5>
             <span class="col-12" id="collab_logo">
-                <img src="{% static 'images/apple-logo.svg' %}" alt="">
-                <img src="{% static 'images/meta.svg' %}" alt="">
-                <img src="{% static images/microsoft.svg' %}" alt="">
-                <img src="images/github.svg" alt="">
-                <img src="images/amazon.svg" alt="">
+                <img src="{% static 'landing/images/apple-logo.svg' %}" alt="">
+                <img src="{% static 'landing/images/meta.svg' %}" alt="">
+                <img src="{% static 'landing/images/microsoft.svg' %}" alt="">
+                <img src="landing/images/github.svg" alt="">
+                <img src="landing/images/amazon.svg" alt="">
             </span>
         </div>
 
@@ -87,21 +88,21 @@
                 <div class="col-9 boxed col-td-4">
                     <p>
                         "This is the best site I have come across for chunking. ait literally saves time and space"<br/>
-                        <img src="images/person_icon.svg" alt="">Nwokoye Praise<br>Developer
+                        <img src="landing/images/person_icon.svg" alt="">Nwokoye Praise<br>Developer
                     </p>
                 </div>
 
                 <div class="boxed col-9 col-td-4">
                     <p>
                         "So easy to use and you can access your files whenever"<br/>
-                        <img src="images/person_icon.svg" alt="">Nkwocha Sixtus<br>Developer
+                        <img src="landing/images/person_icon.svg" alt="">Nkwocha Sixtus<br>Developer
                     </p>
                 </div>
 
                 <div class="col-9 boxed col-td-4">
                     <p>
                         "It really helps to save a lot of space and breakdown my large files so easily"<br/>
-                        <img src="images/person_icon.svg" alt="">Eke Kalu<br>
+                        <img src="landing/images/person_icon.svg" alt="">Eke Kalu<br>
                         Developer
                     </p>
                 </div>

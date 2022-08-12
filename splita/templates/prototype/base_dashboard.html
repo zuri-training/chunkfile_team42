@@ -9,9 +9,8 @@
         <title>{% block title %}base{% endblock %}</title>
         <link href="{% static 'landing\css\dashboard.css' %}" rel="stylesheet">
         <link href="{% static 'landing\splita_icon\style.css' %}" rel="stylesheet">
-        <script src="{& static }"></script>
         <script src="https://kit.fontawesome.com/c423e479ae.js" crossorigin="anonymous"></script>
-        <!--<script defer src="{% static 'landing\javascript\dashboard.js' %}"></script>-->
+        <script defer src="{% static 'landing\javascript\dashboard.js' %}"></script>
 
     </head>
     <body>
@@ -50,7 +49,7 @@
                     </div>
                     <ul>
                         <li class="left_list">
-                            <a class= "left_link"href="{% url 'dashboard' %}">
+                            <a class= "left_link"href="{% url 'prototype:dashboard' %}">
                                 <div class="splita_icon icon-dashboard"></div>
                                 <p class="icon-text">Dashboard</p>
                             </a>

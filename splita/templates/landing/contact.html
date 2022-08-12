@@ -12,43 +12,37 @@
         <h2 id="login-title">Contact Us</h2>
         
         <p id="login1">Fill up the form below and we will get back to you promptly</p>
-        <form action="post">
+        <form method="post">
             {% csrf_token %}
-           <table>
-            <tr>
-                <td>
-                    <p>Full Name</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" placeholder="Full Name" name="fullname" class="inp" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Email Address</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="email" placeholder="Email Address" name="email" class="inp" required>
-
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" name="message" placeholder="Message...." class="inp" style="padding-bottom: 12rem;" required>
-                </td>
-            </tr>
-           </table>
-            
-
-           <div id="btnn">
-            <button id="contact-btn"><a href="contact.html">Send message</a></button>
-        
-            </div>   
-
+            <form method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <p>Full Name</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{form.fullname}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Email Address</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           {{form.email}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           {{form.message}}
+                        </td>
+                    </tr>
+                   </table>
+                    
         </form>
         </div>
 </div>

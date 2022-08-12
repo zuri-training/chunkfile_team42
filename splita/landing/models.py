@@ -41,3 +41,12 @@ class customuser(AbstractBaseUser, PermissionsMixin):
     class Meta:
         verbose_name = 'user'
         verbose_name_plural = 'users'
+
+class Contact(models.Model):
+    fullname = models.TextField()
+    email = models.EmailField()
+    message = models.TextField()
+
+    def __str__(self):
+        return self.email
+

@@ -1,5 +1,6 @@
 {% extends 'landing/base.html' %}
 {% load static %}
+
 {% block title %}login{% endblock %}
 {% block content %}
 <head>
@@ -30,12 +31,17 @@
                     <input type="checkbox" name="remember" value=" remember-me">
                     <label for="remember">Remember me</label>
                 </div>
-            <a href="/reset" id="forgot">Forgot Password</a>
+            <a href="/password_reset" id="forgot">Forgot Password</a>
             </div>
 
             <button id="btn">Log In</button>
 
             </form>
+            <div>
+                {% for message in messages %}
+                <p>{{message}}</p>
+                {% endfor %}
+            </div>
             <div class="or-style">
                 <div class="line"></div>
                 <h4>OR</h4>
