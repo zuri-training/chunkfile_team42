@@ -86,7 +86,7 @@
                                <!-- ended -->
                         <!-- logout sec started -->
                         <li class="left_list log_out">
-                            <a class= "left_link"href="#">
+                            <a class= "left_link"href="{% url 'logout' %}">
                                 <div class="splita_icon icon-logout"></div>
                                 <p class="icon-text">Logout</p>
                             </a>
@@ -116,7 +116,7 @@
                                 <img src="{% static 'landing\img\user_arrow.png' %}" class= "user_arrow"alt="Arrow Down image">
                             </button>
                             <div class="dropdown-content">
-                              <a href="#">Logout</a>
+                              <a href="{% url 'logout' %}">Logout</a>
                             </div>
                         </div>
                     </div>
