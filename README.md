@@ -1,5 +1,7 @@
 # chunkfile_team42
 
+A requirements.txt has been added to the project root, kindly install them by typing 'pip install -r requirements.txt'
+
 Team42 is engaged in building a platform that manipulates files with emphasis on chunking large csv and json files.
 
 # Welcome
