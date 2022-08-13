@@ -38,10 +38,10 @@ def signup(request):
 
         newuser = customuser.objects._create_user(email, password)
         newuser.save()
-        
+
         messages.success(request, "Your account has been successfully created")
         return redirect('/login')
-     
+
     return render(request, 'landing/signup.html')
 
 def login_view(request):
@@ -63,10 +63,7 @@ def contact(request):
 		form = ContactForm(request.POST)
 		if form.is_valid():
 			form.save()
-			return HttpResponse('Success! Thank you for your message.')
-      
-	form = ContactForm()
-	return render(request, "landing/contact.html", {'form':form})
+	return render(request, "landing/contact.html")
 
 def successView(request):
     return HttpResponse('Success! Thank you for your message.')
