@@ -1,10 +1,5 @@
 # chunkfile_team42
 
-For developers who will like to check out this on their local host;
-
-fork this repository, then clone it 
-
-A requirements.txt has been added to the project root, kindly install them by typing 'pip install -r requirements.txt'
 
 Team42 is engaged in building a platform that manipulates files with emphasis on chunking large csv and json files.
 
@@ -28,3 +23,90 @@ Splita is a free web platform,however to be able to perform all the above ,the p
 
 Splita has been designed to be user-friendly and we have tried to tackle any technical issues. However, in the event where you face an unfortunate technical issue,contact support and our technical support team will contact you and we will be able to come up with a solution as fast as possible. 
 
+## How to use?
+
+> - Login/signup on our website
+
+>- Upload a file
+
+>- Specify the chunk size by the number of rows you want
+
+>- Click on the chunk button
+
+>- The file will be chunked and saved as .zip, ready for download
+
+
+If you want to run our project locally, you can do so by running the following commands:
+
+Clone the project
+
+```
+  git clone https://github.com/zuri-training/chunkfile_team42
+```
+
+Go to the project directory
+
+```
+
+
+cd splita
+
+```
+
+Create a Virtual Environment
+
+```
+
+python -m venv venv
+
+```
+
+Activate Virtual Environment
+
+```
+
+venv\scripts\activate
+
+```
+
+Install Dependencies
+
+```
+
+pip install -r requirements.txt
+
+```
+
+make migrations using
+```
+ python manage.py makemigrations
+
+```
+
+Migrate the database using 
+
+```
+python manage.py migrate
+
+```
+
+create superuser using
+
+```
+python manage.py createsuperuser
+
+```
+
+Finally, Start The Server using 
+```
+python manage.py runserver
+```
+
+​
+## Developers Tools
+>This site was built using the following tools:
+>* HTML
+>* CSS
+>* jAVASCRIPT
+>* PYTHON(Django)
+​
