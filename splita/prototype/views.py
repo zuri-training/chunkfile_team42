@@ -85,7 +85,7 @@ def splita(request):
                 resulting_file.save()
 
                 messages.info(request, "Split completed")
-                return redirect(request, 'prototype:fileAuthen3.html')
+                return redirect(request, 'prototype:fileAuthen3')
 
         messages.error(
             request, "Invalid file format, Please upload a valid csv or json file")
