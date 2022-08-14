@@ -130,6 +130,7 @@
                     </div>
                 </div>
                 <!-- top ended -->
+               
                 <!-- main file authentication content started -->
                 <div class="main_authen3">
                     <p class="your_file_text">Your Files</p>
@@ -139,79 +140,34 @@
                             <thead id="head-element">
                                 <tr class="row">
                                     <th class="top_left_radius">
-                                        Number
+                                        Date
                                     </th>
                                     <th class="long-width">
                                         File Name
                                     </th>
                                     <th colspan="1">
-                                        Size
+                                        Number of files after chunking
                                     </th>
+                                    
                                 </tr>
                             </thead>
                             <tbody>
+                                {% for file in files %}
+                                
                                 <tr class="row">
-                                    <td class="file_detail">
-                                        1
+                                    <td class="file_detail long-width">
+                                        {{file.uploaded_at}}
                                     </td>
                                     <td class="file_detail long-width">
-                                        CSV_1
+                                        {{file.docfile}}
                                     </td>
                                     <td class="file_detail right_td">
-                                        40MB
+                                        {{file.totalchunk}}
                                     </td>
                                 </tr>
                                 <!-- SECOND FILE -->
-                                <tr class="row">
-                                    <td class="file_detail">
-                                        2
-                                    </td>
-                                    <td class="file_detail long-width">
-                                        CSV_2
-                                    </td>
-                                    <td class="file_detail right_td">
-                                        40MB
-                                    </td>
-                                </tr>
-
-                                <!-- THIRD FILE -->
-                                <tr class="row">
-                                    <td class="file_detail">
-                                        3
-                                    </td>
-                                    <td class="file_detail long-width">
-                                        CSV_3
-                                    </td>
-                                    <td class="file_detail right_td">
-                                        40MB
-                                    </td>
-                                </tr>
-
-                                <!-- FOURTH FILE -->
-                                <tr class="row">
-                                    <td class="file_detail">
-                                        4
-                                    </td>
-                                    <td class="file_detail long-width">
-                                        CSV_4
-                                    </td>
-                                    <td class="file_detail right_td">
-                                        40MB
-                                    </td>
-                                </tr>
-
-                                <!-- FIFTH FILE -->
-                                <tr class="row">
-                                    <td class="file_detail bottom_td bom_left_radius">
-                                        5
-                                    </td>
-                                    <td class="file_detail long-width bottom_td">
-                                        CSV_5
-                                    </td>
-                                    <td class="file_detail right_td bottom_td bom_right_radius">
-                                        40MB
-                                    </td>
-                                </tr>
+                                {% endfor %}
+                                
                             </tbody>
 
                         </table>

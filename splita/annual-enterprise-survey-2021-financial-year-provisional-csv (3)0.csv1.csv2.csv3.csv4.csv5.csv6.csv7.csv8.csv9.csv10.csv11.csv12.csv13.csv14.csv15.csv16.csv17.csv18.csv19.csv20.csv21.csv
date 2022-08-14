@@ -1,0 +1,201 @@
+Year,Industry_aggregation_NZSIOC,Industry_code_NZSIOC,Industry_name_NZSIOC,Units,Variable_code,Variable_name,Variable_category,Value,Industry_code_ANZSIC06
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H13,Redundancy and severance,Financial performance,2,ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H19,Purchases and other operating expenses,Financial performance,"9,015",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H20,Non-operating expenses,Financial performance,199,ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H21,Opening stocks,Financial performance,65,ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H22,Closing stocks,Financial performance,88,ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H23,Surplus before income tax,Financial performance,"3,488",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H24,Total assets,Financial position,"28,812",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H25,Current assets,Financial position,"7,353",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H26,Fixed tangible assets,Financial position,"12,025",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H27,Additions to fixed assets,Financial position,"1,401",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H28,Disposals of fixed assets,Financial position,504,ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H29,Other assets,Financial position,"9,434",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H30,Total equity and liabilities,Financial position,"28,812",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"14,838",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H32,Current liabilities,Financial position,"5,879",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Dollars (millions),H33,Other liabilities,Financial position,"8,095",ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Percentage,H36,Current ratio,Financial ratios,125,ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Percentage,H37,Quick ratio,Financial ratios,124,ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Percentage,H39,Return on equity,Financial ratios,24,ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Percentage,H40,Return on total assets,Financial ratios,12,ANZSIC06 division Q
+2021,Level 1,QQ,Health Care and Social Assistance,Percentage,H41,Liabilities structure,Financial ratios,51,ANZSIC06 division Q
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H01,Total income,Financial performance,"1,519",ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H05,"Interest, dividends and donations",Financial performance,C,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H06,"Sales, government funding, grants and subsidies",Financial performance,"1,439",ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H07,Non-operating income,Financial performance,C,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H08,Total expenditure,Financial performance,"1,368",ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H09,Interest and donations,Financial performance,25,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H10,Indirect taxes,Financial performance,6,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H11,Depreciation,Financial performance,85,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H12,Salaries and wages paid,Financial performance,500,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H13,Redundancy and severance,Financial performance,0,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H19,Purchases and other operating expenses,Financial performance,749,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H20,Non-operating expenses,Financial performance,2,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H21,Opening stocks,Financial performance,24,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H22,Closing stocks,Financial performance,36,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H23,Surplus before income tax,Financial performance,163,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H24,Total assets,Financial position,"2,058",ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H25,Current assets,Financial position,299,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H26,Fixed tangible assets,Financial position,"1,090",ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H27,Additions to fixed assets,Financial position,246,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H28,Disposals of fixed assets,Financial position,40,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H29,Other assets,Financial position,669,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H30,Total equity and liabilities,Financial position,"2,058",ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"1,148",ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H32,Current liabilities,Financial position,339,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Dollars (millions),H33,Other liabilities,Financial position,571,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Percentage,H36,Current ratio,Financial ratios,88,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Percentage,H37,Quick ratio,Financial ratios,78,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Percentage,H39,Return on equity,Financial ratios,14,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Percentage,H40,Return on total assets,Financial ratios,8,ANZSIC06 group Q840
+2021,Level 4,QQ111,Hospitals,Percentage,H41,Liabilities structure,Financial ratios,56,ANZSIC06 group Q840
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H01,Total income,Financial performance,"13,249","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H05,"Interest, dividends and donations",Financial performance,C,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H06,"Sales, government funding, grants and subsidies",Financial performance,"12,875","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H07,Non-operating income,Financial performance,C,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H08,Total expenditure,Financial performance,"11,057","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H09,Interest and donations,Financial performance,54,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H10,Indirect taxes,Financial performance,30,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H11,Depreciation,Financial performance,312,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H12,Salaries and wages paid,Financial performance,"4,981","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H13,Redundancy and severance,Financial performance,2,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H19,Purchases and other operating expenses,Financial performance,"5,563","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H20,Non-operating expenses,Financial performance,118,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H21,Opening stocks,Financial performance,38,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H22,Closing stocks,Financial performance,47,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H23,Surplus before income tax,Financial performance,"2,202","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H24,Total assets,Financial position,"8,760","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H25,Current assets,Financial position,"3,811","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H26,Fixed tangible assets,Financial position,"2,346","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H27,Additions to fixed assets,Financial position,530,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H28,Disposals of fixed assets,Financial position,210,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H29,Other assets,Financial position,"2,603","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H30,Total equity and liabilities,Financial position,"8,760","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"4,433","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H32,Current liabilities,Financial position,"2,887","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Dollars (millions),H33,Other liabilities,Financial position,"1,440","ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Percentage,H36,Current ratio,Financial ratios,132,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Percentage,H37,Quick ratio,Financial ratios,130,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Percentage,H39,Return on equity,Financial ratios,50,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Percentage,H40,Return on total assets,Financial ratios,25,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ112,Medical and Other Health Care Services,Percentage,H41,Liabilities structure,Financial ratios,51,"ANZSIC06 groups Q851, Q852, Q853, and Q859"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H01,Total income,Financial performance,"8,033","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H05,"Interest, dividends and donations",Financial performance,506,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H06,"Sales, government funding, grants and subsidies",Financial performance,"7,086","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H07,Non-operating income,Financial performance,441,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H08,Total expenditure,Financial performance,"6,911","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H09,Interest and donations,Financial performance,90,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H10,Indirect taxes,Financial performance,44,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H11,Depreciation,Financial performance,150,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H12,Salaries and wages paid,Financial performance,"3,845","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H13,Redundancy and severance,Financial performance,0,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H19,Purchases and other operating expenses,Financial performance,"2,703","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H20,Non-operating expenses,Financial performance,79,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H21,Opening stocks,Financial performance,3,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H22,Closing stocks,Financial performance,4,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H23,Surplus before income tax,Financial performance,"1,123","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H24,Total assets,Financial position,"17,993","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H25,Current assets,Financial position,"3,243","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H26,Fixed tangible assets,Financial position,"8,589","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H27,Additions to fixed assets,Financial position,625,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H28,Disposals of fixed assets,Financial position,254,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H29,Other assets,Financial position,"6,162","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H30,Total equity and liabilities,Financial position,"17,993","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"9,256","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H32,Current liabilities,Financial position,"2,653","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Dollars (millions),H33,Other liabilities,Financial position,"6,084","ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Percentage,H36,Current ratio,Financial ratios,122,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Percentage,H37,Quick ratio,Financial ratios,122,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Percentage,H39,Return on equity,Financial ratios,12,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Percentage,H40,Return on total assets,Financial ratios,6,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 4,QQ113,Residential Care Services and Social Assistance,Percentage,H41,Liabilities structure,Financial ratios,51,"ANZSIC06 groups Q860, Q871, and Q879"
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H01,Total income,Financial performance,"22,640",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H04,"Sales, government funding, grants and subsidies",Financial performance,"19,284",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H05,"Interest, dividends and donations",Financial performance,"2,313",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H07,Non-operating income,Financial performance,"1,043",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H08,Total expenditure,Financial performance,"19,438",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H09,Interest and donations,Financial performance,785,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H10,Indirect taxes,Financial performance,255,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H11,Depreciation,Financial performance,775,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H12,Salaries and wages paid,Financial performance,"5,336",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H13,Redundancy and severance,Financial performance,5,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H19,Purchases and other operating expenses,Financial performance,"11,886",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H20,Non-operating expenses,Financial performance,401,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H21,Opening stocks,Financial performance,556,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H22,Closing stocks,Financial performance,588,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H23,Surplus before income tax,Financial performance,"3,234",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H24,Total assets,Financial position,"30,407",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H25,Current assets,Financial position,"10,439",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H26,Fixed tangible assets,Financial position,"11,708",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H27,Additions to fixed assets,Financial position,"1,465",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H28,Disposals of fixed assets,Financial position,638,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H29,Other assets,Financial position,"8,260",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H30,Total equity and liabilities,Financial position,"30,407",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"20,997",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H32,Current liabilities,Financial position,"5,950",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars (millions),H33,Other liabilities,Financial position,"3,461",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars,H34,Total income per employee count,Financial ratios,"225,100",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Dollars,H35,Surplus per employee count,Financial ratios,"32,200",ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Percentage,H36,Current ratio,Financial ratios,175,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Percentage,H37,Quick ratio,Financial ratios,166,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Percentage,H39,Return on equity,Financial ratios,15,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Percentage,H40,Return on total assets,Financial ratios,11,ANZSIC06 divisions R and S
+2021,Level 1,RS,"Arts, Recreation and Other Services",Percentage,H41,Liabilities structure,Financial ratios,69,ANZSIC06 divisions R and S
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H01,Total income,Financial performance,"8,953",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H04,"Sales, government funding, grants and subsidies",Financial performance,"7,816",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H05,"Interest, dividends and donations",Financial performance,882,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H07,Non-operating income,Financial performance,254,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H08,Total expenditure,Financial performance,"7,757",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H09,Interest and donations,Financial performance,287,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H10,Indirect taxes,Financial performance,204,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H11,Depreciation,Financial performance,384,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H12,Salaries and wages paid,Financial performance,"1,477",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H13,Redundancy and severance,Financial performance,3,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H19,Purchases and other operating expenses,Financial performance,"5,101",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H20,Non-operating expenses,Financial performance,304,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H21,Opening stocks,Financial performance,106,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H22,Closing stocks,Financial performance,116,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H23,Surplus before income tax,Financial performance,"1,206",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H24,Total assets,Financial position,"12,534",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H25,Current assets,Financial position,"3,184",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H26,Fixed tangible assets,Financial position,"7,302",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H27,Additions to fixed assets,Financial position,820,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H28,Disposals of fixed assets,Financial position,352,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H29,Other assets,Financial position,"2,048",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H30,Total equity and liabilities,Financial position,"12,534",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"8,656",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H32,Current liabilities,Financial position,"2,331",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars (millions),H33,Other liabilities,Financial position,"1,547",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars,H34,Total income per employee count,Financial ratios,"273,200",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Dollars,H35,Surplus per employee count,Financial ratios,"36,800",ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Percentage,H36,Current ratio,Financial ratios,137,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Percentage,H37,Quick ratio,Financial ratios,132,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Percentage,H39,Return on equity,Financial ratios,14,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Percentage,H40,Return on total assets,Financial ratios,10,ANZSIC06 division R
+2021,Level 3,RS11,Arts and Recreation Services,Percentage,H41,Liabilities structure,Financial ratios,69,ANZSIC06 division R
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H01,Total income,Financial performance,973,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H04,"Sales, government funding, grants and subsidies",Financial performance,870,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H05,"Interest, dividends and donations",Financial performance,75,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H07,Non-operating income,Financial performance,28,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H08,Total expenditure,Financial performance,784,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H09,Interest and donations,Financial performance,C,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H10,Indirect taxes,Financial performance,3,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H11,Depreciation,Financial performance,36,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H12,Salaries and wages paid,Financial performance,C,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H13,Redundancy and severance,Financial performance,0,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H19,Purchases and other operating expenses,Financial performance,C,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H20,Non-operating expenses,Financial performance,C,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H21,Opening stocks,Financial performance,20,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H22,Closing stocks,Financial performance,22,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H23,Surplus before income tax,Financial performance,191,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H24,Total assets,Financial position,"2,298","ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H25,Current assets,Financial position,C,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H26,Fixed tangible assets,Financial position,"1,639","ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H27,Additions to fixed assets,Financial position,82,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H28,Disposals of fixed assets,Financial position,64,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H29,Other assets,Financial position,C,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H30,Total equity and liabilities,Financial position,"2,298","ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"1,824","ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H32,Current liabilities,Financial position,294,"ANZSIC06 groups R891, R892, and R900"
+2021,Level 4,RS111,Heritage and Artistic Activities,Dollars (millions),H33,Other liabilities,Financial position,180,"ANZSIC06 groups R891, R892, and R900"

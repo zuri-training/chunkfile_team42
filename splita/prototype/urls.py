@@ -10,8 +10,8 @@ app_name = 'prototype'
 urlpatterns = [
     path('dashboard/', views.dashboard, name='dashboard'),
     path('dashboard/splita/', views.splita, name='splita'),
-    path('fileAuthen3/', views.MyFilesView.as_view(), name='fileAuthen3'),
-    path('filepage/', views.MyFilesView.as_view(), name='filepage'),
+        path('fileAuthen3/', views.fileAuthen3, name='fileAuthen3'),
+    # path('filepage/', views.MyFilesView.as_view(), name='filepage'),
     
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
