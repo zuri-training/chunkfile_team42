@@ -26,13 +26,13 @@ class customuserManager(BaseUserManager):
         user.is_staff = True
         user.save(using=self._db)
         return user
-      
+
 class customuser(AbstractBaseUser, PermissionsMixin):
     username=None
     id = models.BigAutoField(primary_key = True)
     email = models.EmailField(validators = [validators.EmailValidator()], unique=True, max_length = 200)
-    fullname = models.CharField(max_length=50, blank=True)
-    password = models.CharField( max_length=30, blank=True)
+    fullname = models.CharField(max_length=250, blank=True)
+    password = models.CharField( max_length=250, blank=True)
     is_staff = models.BooleanField(default=False)
     is_superuser = models.BooleanField(default=False)
     # profilepic = models.ImageField(null=True, blank=True, upload_to='image/')
