@@ -148,7 +148,9 @@
                                     <th colspan="1">
                                         Number of files after chunking
                                     </th>
-                                    
+                                    <th colspan="1">
+                                        Download
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -164,18 +166,21 @@
                                     <td class="file_detail right_td">
                                         {{file.totalchunk}}
                                     </td>
+                                    <td class="file_detail right_td">
+                                        <button class="download_btn btn"><a href="/prototype/download_file?filename={{file.docfile}}">Download</a></button>
+                                        
+                                    </td>
                                 </tr>
                                 <!-- SECOND FILE -->
-                                {% endfor %}
                                 
                             </tbody>
+                            {% endfor %}
 
                         </table>
                     </div>
 
                     <div class="btns">
                         <button class="save_btn btn">Save</button>
-                        <button class="download_btn btn">Download</button>
                     </div>
 
 
