@@ -59,7 +59,7 @@ ROOT_URLCONF = 'splita.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [BASE_DIR/ 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -131,12 +131,12 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 STATIC_ROOT = BASE_DIR/ "staticfiles"
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR/'static'),
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR/'static',
+]
 
 MEDIA_ROOT = [
-    os.path.join(BASE_DIR, 'media'),
+    BASE_DIR/ 'media',
 ]
 
 AUTH_USER_MODEL = 'landing.customuser'
