@@ -233,7 +233,7 @@ padding-bottom: 2rem;
 #recent-title{
 display: flex;
 justify-content: center;
-gap: 35vw;
+gap: 6vw;
 margin-top: 1.5rem;
 margin-bottom: 1.5rem;
 margin-right: 1rem;
@@ -260,7 +260,7 @@ margin-left: 2rem;
 .file-list{
     display: flex;
     justify-content: center;
-    gap: 12vw;
+    gap: 2vw;
     font-weight: 400;
     margin-bottom: 2rem;
     margin-left: 2rem;
@@ -482,6 +482,7 @@ justify-content: center;
      }
      #recent-title{
         gap: 60vw;
+        margin-left: 3rem;
 
      }
      .file-list{
@@ -509,7 +510,7 @@ justify-content: center;
 
      }
      .file-list{
-        gap: 16vw;
+        gap: 12vw;
         margin-left: 0;
      }
      .file-date{
@@ -520,7 +521,7 @@ justify-content: center;
      }
      
      .all-storage{
-        gap: 5vw;
+        gap: 2vw;
      }
      .side-storage{
         width: 90%;
