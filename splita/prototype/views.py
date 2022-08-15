@@ -36,10 +36,11 @@ def myfile(request):
     print(documents)
     return render(request, 'prototype/filepage.html',{'files': documents})
 
-# def delete(request):
-#     documents = Documents.objects.filter(user=request.user)
-#     documents.delete()
-#     return redirect('prototype:myfile')
+def delete(request):
+    filename = request.GET.get('filename')
+    documents = Documents.objects.filter(user=request.user,docfile=filename )
+    documents.delete()
+    return redirect('prototype:myfile')
 
 def splita(request):
     if request.method == "POST":
