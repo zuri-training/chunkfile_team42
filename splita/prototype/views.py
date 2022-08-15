@@ -1,3 +1,4 @@
+from datetime import datetime
 import os
 from urllib import response
 from django.contrib import messages
@@ -33,8 +34,12 @@ def fileAuthen3(request):
 def myfile(request):
     documents = Documents.objects.filter(user=request.user)
     print(documents)
-    return render(request, 'prototype/fileAuthen3.html',{'files': documents})
+    return render(request, 'prototype/filepage.html',{'files': documents})
 
+# def delete(request):
+#     documents = Documents.objects.filter(user=request.user)
+#     documents.delete()
+#     return redirect('prototype:myfile')
 
 def splita(request):
     if request.method == "POST":
@@ -45,6 +50,7 @@ def splita(request):
         # getting out the file extension from the file name
         file_ext = file_settings_name.split('.')[1]
         file_name = file_settings_name.split('.')[0]
+        zip_name = file_name + str(datetime.utcnow().timestamp()).split('.')[0]
         # this is the chunk size as provided by the user
         chunk_size = int(request.POST['chunk_row_size'])
         #file_size = Path(file_settings).stat()
@@ -64,12 +70,12 @@ def splita(request):
                 for chunk in data_set:
                     file_name1 = file_name + str(counter) + f'.{file_ext}'
                     file = chunk.to_csv(file_name1, index=False)
-                    with zipfile.ZipFile(f"media/{file_name}.zip", 'a', compression=zipfile.ZIP_DEFLATED) as zip_file:
+                    with zipfile.ZipFile(f"media/{zip_name}.zip", 'a', compression=zipfile.ZIP_DEFLATED) as zip_file:
                         zip_file.write(file_name1,file)
                     os.remove(file_name1)
                     counter += 1
 
-                resulting_file = Documents.objects.create(docfile=f"{file_name1}.zip",user=request.user, totalchunk=counter+1)
+                resulting_file = Documents.objects.create(docfile=f"{zip_name}.zip",user=request.user, totalchunk=counter+1)
                 resulting_file.save()
 
                 messages.info(request, "Split completed")
@@ -83,12 +89,12 @@ def splita(request):
                 for chunk in data_set:
                     file_name = file_name + str(counter) + f'.{file_ext}'
                     file = chunk.to_json(file_name, index=1, orient = 'record')
-                    with zipfile.ZipFile(f"media/{file_name}.zip", 'a', compression=zipfile.ZIP_DEFLATED) as zip_file:
+                    with zipfile.ZipFile(f"media/{zip_name}.zip", 'a', compression=zipfile.ZIP_DEFLATED) as zip_file:
                         zip_file.write(file_name,file)
                     os.remove(file_name)
                     counter += 1
 
-                resulting_file = Documents.objects.create(docfile=f"{file_name}.zip",user=request.user, totalchunk=counter+1)
+                resulting_file = Documents.objects.create(docfile=f"{zip_name}.zip",user=request.user, totalchunk=counter+1)
                 resulting_file.save()
 
                 messages.info(request, "Split completed")
