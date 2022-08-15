@@ -83,8 +83,10 @@ def splita(request):
                 return redirect('prototype:fileAuthen3')
 
             if file_ext == "json":
+
                 print('file',file_settings)
                 data_set = pd.read_json(file_settings, lines = True)
+
                 counter = 0
 
                 for chunk in data_set:
