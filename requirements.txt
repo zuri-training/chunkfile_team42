@@ -9,3 +9,9 @@ six==1.16.0
 sqlparse==0.4.2
 tzdata==2022.1
 whitenoise==6.2.0
+dj-database-url 
+gunicorn
+Pillow
+psycopg2
+psycopg2-binary
+
