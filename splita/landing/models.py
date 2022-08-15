@@ -26,7 +26,7 @@ class customuserManager(BaseUserManager):
         user.is_staff = True
         user.save(using=self._db)
         return user
-      
+
 class customuser(AbstractBaseUser, PermissionsMixin):
     username=None
     id = models.BigAutoField(primary_key = True)
