@@ -50,14 +50,14 @@
             <!-- <div class="left_navbar"> -->
                 <ul>
                     <li class="left_list">
-                        <a class= "left_link"href="{% url 'prototype:myfile' %}">
+                        <a class= "left_link"href="{% url 'prototype:dashboard' %}">
                             <img src="{% static 'landing\img\dashboard_icon.png' %}" class="left_navbar_icon for_active" alt="dashboard_icon">
                            <p>Dashboard</p>
                         </a>
                     </li>
                     <li class="left_list"><a class= "left_link" href="{% url 'prototype:myfile' %}">
                         <img src="{% static 'landing\img\Group.png' %}" class="left_navbar_icon" alt="files_icon"><p>My Files</p></a></li>
-                    <li class="left_list"><a class= "left_link"href="#">
+                    <li class="left_list"><a class= "left_link"href="{% url 'prototype:fileAuthen3' %}">
                         <img src="{% static 'landing\img\Group1.png' %}" class="left_navbar_icon" alt="storage icon"><p>Storage</p></a></li>
                     <li class="left_list"><a class= "left_link"href="#">
                         <img src="{% static 'landing\img\Group2.png' %}" class="left_navbar_icon" alt="Recycle bin icon"><p>Recycle Bin</p></a></li>
