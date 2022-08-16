@@ -151,6 +151,6 @@ STATIC_URL = "static/"
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-import dj_database_url
-db=dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db)
+# import dj_database_url
+# db=dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db)
