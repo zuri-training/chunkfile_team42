@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -81,11 +82,11 @@ WSGI_APPLICATION = 'splita.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'test',
-        'USER': 'postgres',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '8000',
+        'NAME': 'd997mmc4ku2hs6',
+        'USER': 'hykgwkmgrueziy',
+        'PASSWORD': '24ae81792e8757b5ec35ce7bb57f83414667ca5cab488733577caa3526d0902d',
+        'HOST': 'ec2-44-209-186-51.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -148,7 +149,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = "static/"
-
+django_heroku.settings(locals())
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 # import dj_database_url
