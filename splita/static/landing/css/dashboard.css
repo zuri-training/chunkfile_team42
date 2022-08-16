@@ -239,6 +239,7 @@ body{
 
 .white_aside_wrap{
     display: flex;
+    justify-content: space-around;
     
 }
 
@@ -292,8 +293,8 @@ body{
 }
 .break_line_rectangle{
     max-width: 100%;
-    height: 85%;
-    padding: 2rem 0 4rem;
+    height: 55%;
+    padding: 4rem 0 4rem;
     font-weight: 500;
     font-size: 20px;
     cursor: pointer;
@@ -772,7 +773,7 @@ aside{
         font-weight: 500;
         font-size: 14px;
         color: #000000;
-        padding: 2rem 0 5rem;
+        padding: 2rem 0 2rem;
     }
 
     .upload_text {
