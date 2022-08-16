@@ -90,7 +90,7 @@
                                <!-- ended -->
                         <!-- logout sec started -->
                         <li class="left_list log_out log_out_authen">
-                            <a class= "left_link"href="#">
+                            <a class= "left_link"href="{% url 'logout' %}">
                                 <div class="splita_icon icon-logout"></div>
                                 <p class="icon-text">Logout</p>
                             </a>
@@ -123,7 +123,7 @@
                               <a href="#">Edit Profile</a>
                               <a href="#">Help</a>
                               <a href="#">Settings</a>
-                              <a href="#" class="logout_dropdown">Logout</a>
+                              <a href="{% url 'logout' %}" class="logout_dropdown">Logout</a>
 
                             </div>
                           </div> 
