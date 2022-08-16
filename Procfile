@@ -1,0 +1,1 @@
+web: gunicorn --chdir ./splita splita.wsgi:application
