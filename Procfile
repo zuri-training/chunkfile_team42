@@ -1,1 +1,1 @@
-web: gunicorn splita.wsgi --log-file -
+web: -sh c "cd splita && gunicorn splita.wsgi:application"
