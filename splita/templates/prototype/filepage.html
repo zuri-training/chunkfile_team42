@@ -34,7 +34,7 @@
                     <a href="#"> Edit Profile</a>
                     <a href="#">Help</a>
                     <a href="#">Settings</a>
-                  <a href="#" id="last-drop-down-content">Logout</a>
+                  <a href="{% url 'logout' %}" id="last-drop-down-content">Logout</a>
                 </div>
               </div> 
         </div>
@@ -98,7 +98,7 @@
 
                             <!-- ended -->
                     <!-- logout sec started -->
-                    <li class="left_list log_out"><a class= "left_link"href="#">
+                    <li class="left_list log_out"><a class= "left_link"href="{% url 'logout' %}">
                         <img src="{% static 'landing\img\Group6.png' %}" class="left_navbar_icon" alt="Logout icon"><p>Logout</p></a></li>
                 </ul>
             </div>
