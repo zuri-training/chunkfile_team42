@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-v)$ppbb!2z@n#dk)^)wm-5ldg0w#8psn$+l5f=9q@&*ehfq2ba
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ 'zuri-project-team42-splita.herokuapp.com' ,'*']
 
 
 # Application definition
