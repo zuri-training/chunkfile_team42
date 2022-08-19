@@ -88,11 +88,11 @@ def splita(request):
                 counter = 0
 
                 for chunk in data_set:
-                    file_name = file_name + str(counter) + f'.{file_ext}'
-                    file = chunk.to_json(file_name, index=1, orient = 'record')
+                    file_name1 = file_name + str(counter) + f'.{file_ext}'
+                    file = chunk.to_json(file_name1, index=1, orient = 'record')
                     with zipfile.ZipFile(f"media/{zip_name}.zip", 'a', compression=zipfile.ZIP_DEFLATED) as zip_file:
-                        zip_file.write(file_name,file)
-                    os.remove(file_name)
+                        zip_file.write(file_name1,file)
+                    os.remove(file_name1)
                     counter += 1
 
                 resulting_file = Documents.objects.create(docfile=f"{zip_name}.zip",user=request.user, totalchunk=counter+1)
