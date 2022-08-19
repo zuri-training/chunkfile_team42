@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +26,7 @@ SECRET_KEY = 'django-insecure-v)$ppbb!2z@n#dk)^)wm-5ldg0w#8psn$+l5f=9q@&*ehfq2ba
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ 'zuri-project-team42-splita.herokuapp.com' ,'*']
 
 
 # Application definition
@@ -41,7 +42,6 @@ INSTALLED_APPS = [
     'prototype.apps.PrototypeConfig',
     'users',
     'crispy_forms',
-    'django_dbq',
 ]
 
 MIDDLEWARE = [
@@ -81,14 +81,12 @@ WSGI_APPLICATION = 'splita.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'test',
-        'USER': 'postgres',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '8000',
+        'NAME': 'd997mmc4ku2hs6',
+        'USER': 'hykgwkmgrueziy',
+        'PASSWORD': '24ae81792e8757b5ec35ce7bb57f83414667ca5cab488733577caa3526d0902d',
+        'HOST': 'ec2-44-209-186-51.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -127,7 +125,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -137,12 +134,9 @@ EMAIL_HOST_PASSWORD = 'jfsxzptmmmbrrdxv'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-STATIC_ROOT = BASE_DIR/ "staticfiles"
-STATICFILES_DIRS = [
-    BASE_DIR/'static',
-]
+STATICFILES_DIRS = [BASE_DIR/"static"]
 
-MEDIA_ROOT = BASE_DIR/ 'media',
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media'),
 
 
 AUTH_USER_MODEL = 'landing.customuser'
@@ -153,8 +147,11 @@ AUTH_USER_MODEL = 'landing.customuser'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
+STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_URL = "static/"
+django_heroku.settings(locals())
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
-import dj_database_url
-db=dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db)
+# import dj_database_url
+# db=dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(db)
