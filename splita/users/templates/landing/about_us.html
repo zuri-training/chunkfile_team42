@@ -1,0 +1,42 @@
+{% extends 'landing/base.html' %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+{% block content %}
+<head>
+<link rel="stylesheet" href="{% static 'landing/css/user-styl2.css' %}">
+</head>
+<main>
+    <div class="row">
+        <div class="col-12 box-img col-td-7">
+            <img src="{% static 'landing/images/about_us-img.svg' %}" alt="about_us-img" class="steps_img">
+        </div>
+        <div class="col-12 center-txt col-td-5 first_word">
+            <h3>Welcome To Splita</h3>
+            A reputable platform designed to help break your large CSV and JSON files into smaller bits
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 blue-bg col-td-4 r_float">
+            <h3 class="center-txt">About Us</h3>
+        </div>
+        <div class="col-12 col-td-8">
+            Splita has been helping developers and data analysts who struggle with processing their large CSV and JSON files by providing a secure, user-friendly and timely way to split their large files into smaller chunks within 3 - 4 minutes. We also store already chunked data on the splita platform for safekeeping and future use.<br>
+            Our goal is to improve data handling / transfer process and ensure that our users have stress free experience while using our platform.
+        </div>
+    </div>
+
+    <div class="row">
+    <h5 class="center-txt">Trusted by renowned companies</h5>
+    <span class="col-12" id="collab_logo">
+        <img src="{% static 'landing/images/apple-logo.svg' %}" alt="">
+        <img src="{% static 'landing/images/meta.svg' %}" alt="">
+        <img src="{% static 'landing/images/microsoft.svg' %}" alt="">
+        <img src="{% static 'landing/images/github.svg' %}" alt="">
+        <img src="{% static 'landing/images/amazon.svg' %}" alt="">
+    </span>
+    </div>
+
+</main>
+
+{% endblock %}
